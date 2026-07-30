@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 160" role="img" aria-labelledby="title desc">
+  <title id="title">Condr Grup</title>
+  <desc id="desc">Logotip liniar Condr Grup</desc>
+  <g fill="#151714">
+    <path d="M28 112 53 48h13L41 112zm25 0 31-82h13l-31 82zm30 0 37-98h13l-37 98z"/>
+    <text x="155" y="102" font-family="Manrope,Arial,sans-serif" font-size="76" font-weight="800" letter-spacing="-5">CONDR</text>
+    <text x="485" y="102" font-family="Manrope,Arial,sans-serif" font-size="76" font-weight="400" letter-spacing="-5">GRUP</text>
+  </g>
+  <path d="M157 123h566" stroke="#151714" stroke-width="3"/>
+</svg>

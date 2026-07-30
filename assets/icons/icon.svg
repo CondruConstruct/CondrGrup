@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Condr Grup</title>
+  <desc id="desc">Simbol liniar Condr Grup</desc>
+  <rect width="512" height="512" rx="28" fill="#f0eee8"/>
+  <g fill="#151714">
+    <path d="M91 372 181 140h46L137 372zm92 0 111-288h46L229 372zm108 0L417 44h46L337 372z"/>
+  </g>
+  <path d="M88 414h336" stroke="#ef5a28" stroke-width="14"/>
+</svg>
