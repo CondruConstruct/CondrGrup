@@ -1,0 +1,8 @@
+[
+  { "slug": "port-mall-demolari", "client": "Port Mall", "scope": "Lucrări de demolare", "period": "2023–2026", "evidence": "owner-confirmed", "media": "owned-jobsite" },
+  { "slug": "bomond-port-mall", "client": "Bomond", "scope": "Lucrări la cheie", "period": "", "evidence": "owner-confirmed", "media": "representative-owned; exact-space association pending" },
+  { "slug": "kaufland-botanica", "client": "Kaufland Botanica", "scope": "Lucrări în cadrul obiectivului", "period": "2020", "evidence": "owner-confirmed; public address reconciled", "media": "none published" },
+  { "slug": "terra-avia", "client": "Terra Avia", "scope": "Reparație capitală oficiu", "period": "2026", "evidence": "owner-confirmed", "media": "licensed-identification" },
+  { "slug": "imonna-grup", "client": "Imona Grup", "scope": "400 m² beton și finisare mecanizată", "period": "", "evidence": "owner-confirmed", "media": "owned-jobsite" },
+  { "slug": "radisson-blu-leogrand", "client": "Radisson Blu Leogrand", "scope": "Participare la lucrări", "period": "2016", "evidence": "owner-confirmed", "media": "licensed-identification" }
+]

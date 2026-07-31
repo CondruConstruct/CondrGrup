@@ -49,6 +49,9 @@
       quickQuestion: 'Ai nevoie de o ofertă?',
       viber: 'Scrie pe Viber',
       call: 'Sună acum',
+      emailUs: 'Scrie pe e-mail',
+      social: 'REȚELE SOCIALE',
+      socialSoon: 'link în curând',
       sending: 'Se trimite...',
       sent: 'Mulțumim. Mesajul a fost expediat.',
       toast: 'Mesajul a fost trimis către Condr Grup.',
@@ -99,6 +102,9 @@
       quickQuestion: 'Need a quote?',
       viber: 'Message us on Viber',
       call: 'Call now',
+      emailUs: 'Send an email',
+      social: 'SOCIAL MEDIA',
+      socialSoon: 'link coming soon',
       sending: 'Sending...',
       sent: 'Thank you. Your message has been sent.',
       toast: 'Your message was sent to Condr Grup.',
@@ -149,6 +155,9 @@
       quickQuestion: 'Нужна смета?',
       viber: 'Написать в Viber',
       call: 'Позвонить',
+      emailUs: 'Написать на e-mail',
+      social: 'СОЦИАЛЬНЫЕ СЕТИ',
+      socialSoon: 'ссылка скоро',
       sending: 'Отправка...',
       sent: 'Спасибо. Ваше сообщение отправлено.',
       toast: 'Сообщение отправлено в Condr Grup.',
@@ -284,14 +293,15 @@
           <div class="footer-brand">${logo}<p>${t.footerPromise}</p></div>
           <div class="footer-column"><p class="footer-label">${t.navigation}</p><a href="${pagePath('servicii/index.html')}">${t.services}</a><a href="${pagePath('proiecte/index.html')}">${t.projects}</a><a href="${pagePath('b2b/index.html')}">${t.b2bLinks}</a><a href="${pagePath('despre/index.html')}">${t.about}</a></div>
           <div class="footer-column"><p class="footer-label">${t.contact.toUpperCase()}</p><a href="tel:+37369069195">+373 69 069 195</a><a href="mailto:condru01@gmail.com">condru01@gmail.com</a><p>${t.address}</p></div>
-          <div class="footer-column"><p class="footer-label">${t.company}</p><p>Condr Grup S.R.L.<br>IDNO 1026023118602</p><a href="${pagePath('confidentialitate.html')}">${t.privacy}</a><a href="${pagePath('contact/index.html#oferta')}">${t.requestQuote}</a></div>
+          <div class="footer-column footer-company"><p class="footer-label">${t.company}</p><p>Condr Grup S.R.L.<br>IDNO 1026023118602</p><a href="${pagePath('confidentialitate.html')}">${t.privacy}</a><a href="${pagePath('contact/index.html#oferta')}">${t.requestQuote}</a></div>
+          <div class="footer-column footer-social"><p class="footer-label">${t.social}</p><span class="social-placeholder">Facebook <small>${t.socialSoon}</small></span><span class="social-placeholder">Instagram <small>${t.socialSoon}</small></span><span class="social-placeholder">TikTok <small>${t.socialSoon}</small></span></div>
         </div>
         <div class="footer-bottom"><span>© 2026 CONDR GRUP S.R.L. · ${t.rights}</span><a href="#top">${t.top} ↑</a></div>
       </footer>
       ${buildStoryMarkup()}
       <div class="quick-contact">
         <button class="quick-toggle" type="button" aria-label="${t.quickLabel}" aria-expanded="false">+</button>
-        <div class="quick-panel"><p>${t.quickQuestion}</p><a class="viber" href="viber://chat?number=%2B37369069195">${t.viber} <span>↗</span></a><a class="phone" href="tel:+37369069195">${t.call} <span>↗</span></a></div>
+        <div class="quick-panel"><p>${t.quickQuestion}</p><a class="viber" href="viber://chat?number=%2B37369069195">${t.viber} <span>↗</span></a><a class="phone" href="tel:+37369069195">${t.call} <span>↗</span></a><a class="email" href="mailto:condru01@gmail.com">${t.emailUs} <span>↗</span></a></div>
       </div>
       <div class="toast" role="status" aria-live="polite"></div>
     `);
@@ -310,6 +320,12 @@
       toggle.setAttribute('aria-expanded', String(open));
       toggle.setAttribute('aria-label', open ? t.closeMenu : t.openMenu);
     });
+
+    document.querySelectorAll('.mobile-menu a').forEach(link => link.addEventListener('click', () => {
+      document.body.classList.remove('menu-open');
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.setAttribute('aria-label', t.openMenu);
+    }));
 
     language?.querySelector('button').addEventListener('click', () => {
       const open = language.classList.toggle('open');
@@ -395,6 +411,12 @@
 
   function bindForms() {
     document.querySelectorAll('[data-email-form]').forEach(form => {
+      let started = false;
+      form.addEventListener('focusin', () => {
+        if (started) return;
+        started = true;
+        trackConversion('form_start', { form: form.dataset.conversionForm || 'contact' });
+      });
       form.addEventListener('submit', async event => {
         event.preventDefault();
         const status = form.querySelector('.form-status');
@@ -409,6 +431,7 @@
         status.className = 'form-status';
         submit.disabled = true;
         try {
+          trackConversion('form_submit', { form: form.dataset.conversionForm || 'contact' });
           const response = await fetch('https://formsubmit.co/ajax/condru01@gmail.com', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
@@ -419,13 +442,39 @@
           status.classList.add('success');
           form.reset();
           showToast(t.toast);
+          trackConversion('form_success', { form: form.dataset.conversionForm || 'contact' });
         } catch (error) {
           status.innerHTML = `${t.sendError} <a href="mailto:condru01@gmail.com">condru01@gmail.com</a>.`;
           status.classList.add('error');
+          trackConversion('form_error', { form: form.dataset.conversionForm || 'contact' });
         } finally {
           submit.disabled = false;
         }
       });
+    });
+  }
+
+  function trackConversion(action, details = {}) {
+    const event = {
+      event: 'condr_conversion',
+      action,
+      language: locale,
+      page: logicalPage(),
+      ...details
+    };
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push(event);
+    window.dispatchEvent(new CustomEvent('condr:conversion', { detail: event }));
+  }
+
+  function bindConversionLinks() {
+    document.addEventListener('click', event => {
+      const link = event.target.closest('a[href]');
+      if (!link) return;
+      const href = link.getAttribute('href') || '';
+      if (href.startsWith('tel:')) trackConversion('phone_click');
+      if (href.startsWith('viber:')) trackConversion('viber_click');
+      if (href.startsWith('mailto:')) trackConversion('email_click');
     });
   }
 
@@ -487,6 +536,7 @@
   bindCarousels();
   bindFilters();
   bindForms();
+  bindConversionLinks();
   bindQuickContact();
   startBuildStory();
 
@@ -495,6 +545,7 @@
     locale,
     locales: ['ro', 'ru', 'en'],
     features: FEATURES,
-    showToast
+    showToast,
+    trackConversion
   };
 })();

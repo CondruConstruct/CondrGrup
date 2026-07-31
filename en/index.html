@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Condr Grup — concrete, foundations, roads, turnkey houses, renovations and demolitions in the Republic of Moldova.">
+  <meta name="description" content="Condr Grup performs concrete castings, foundations, roads, turnkey houses, renovations and demolitions for private clients and companies in Moldova.">
   <meta name="theme-color" content="#151714">
   <title>Condr Grup — Construction that stands the test of time</title>
   <link rel="icon" href="../assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="preload" href="../assets/images/hero-construction.webp" as="image" type="image/webp" fetchpriority="high">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -21,31 +22,147 @@
   <meta property="og:site_name" content="Condr Grup">
   <meta property="og:locale" content="en_US">
   <meta property="og:title" content="Condr Grup — Construction that stands the test of time">
-  <meta property="og:description" content="Condr Grup — concrete, foundations, roads, turnkey houses, renovations and demolitions in the Republic of Moldova.">
+  <meta property="og:description" content="Condr Grup performs concrete castings, foundations, roads, turnkey houses, renovations and demolitions for private clients and companies in Moldova.">
   <meta property="og:url" content="https://condrgrup.md/en/">
-  <meta property="og:image" content="https://condrgrup.md/assets/images/projects/bac-armare.webp">
+  <meta property="og:image" content="https://condrgrup.md/assets/images/social-preview.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Condr Grup — construcții în Moldova">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="twitter:title" content="Condr Grup — Construction that stands the test of time">
+  <meta name="twitter:description" content="Condr Grup performs concrete castings, foundations, roads, turnkey houses, renovations and demolitions for private clients and companies in Moldova.">
+  <meta name="twitter:image" content="https://condrgrup.md/assets/images/social-preview.webp">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "GeneralContractor",
-    "name": "Condr Grup S.R.L.",
-    "url": "https://condrgrup.md/",
-    "telephone": "+37369069195",
-    "email": "condru01@gmail.com",
-    "taxID": "1026023118602",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Alexandru cel Bun 17A",
-      "addressLocality": "Vatra",
-      "addressCountry": "MD"
-    },
-    "areaServed": {
-      "@type": "Country",
-      "name": "Republic of Moldova"
-    }
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://condrgrup.md/#organization",
+        "name": "Condr Grup S.R.L.",
+        "alternateName": "Condr Grup",
+        "url": "https://condrgrup.md/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://condrgrup.md/assets/icons/logo.svg"
+        },
+        "image": "https://condrgrup.md/assets/images/social-preview.webp",
+        "telephone": "+37369069195",
+        "email": "condru01@gmail.com",
+        "taxID": "1026023118602",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Alexandru cel Bun 17A",
+          "addressLocality": "Vatra",
+          "addressCountry": "MD"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "Republic of Moldova"
+        },
+        "knowsLanguage": [
+          "ro",
+          "ru",
+          "en"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+37369069195",
+          "email": "condru01@gmail.com",
+          "contactType": "sales",
+          "availableLanguage": [
+            "Romanian",
+            "Russian",
+            "English"
+          ],
+          "areaServed": "MD"
+        },
+        "makesOffer": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Concrete pouring and platforms",
+              "areaServed": "Republic of Moldova"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Roads and exterior works",
+              "areaServed": "Republic of Moldova"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Foundations and structures",
+              "areaServed": "Republic of Moldova"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Turnkey houses",
+              "areaServed": "Republic of Moldova"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Renovations and capital repairs",
+              "areaServed": "Republic of Moldova"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Demolition works",
+              "areaServed": "Republic of Moldova"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://condrgrup.md/#website",
+        "url": "https://condrgrup.md/",
+        "name": "Condr Grup",
+        "publisher": {
+          "@id": "https://condrgrup.md/#organization"
+        },
+        "inLanguage": [
+          "ro",
+          "ru",
+          "en"
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://condrgrup.md/en/#webpage",
+        "url": "https://condrgrup.md/en/",
+        "name": "Condr Grup — Construction that stands the test of time",
+        "description": "Condr Grup performs concrete castings, foundations, roads, turnkey houses, renovations and demolitions for private clients and companies in Moldova.",
+        "inLanguage": "en",
+        "isPartOf": {
+          "@id": "https://condrgrup.md/#website"
+        },
+        "about": {
+          "@id": "https://condrgrup.md/#organization"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://condrgrup.md/assets/images/social-preview.webp"
+        }
+      }
+    ]
   }
   </script>
   <!-- SEO:END -->
@@ -53,17 +170,38 @@
 <body data-page="home" id="top">
   <main id="continut">
     <section class="home-hero">
-      <div class="home-hero-media" role="img" aria-label="Construction site team"></div>
+      <div class="home-hero-media"><img srcset="../assets/images/hero-construction-800.webp 800w, ../assets/images/hero-construction.webp 1920w" sizes="100vw" decoding="async" class="home-hero-image" src="../assets/images/hero-construction.webp" width="1920" height="1280" fetchpriority="high" alt="Team on a construction site"></div>
       <div class="home-hero-content reveal">
         <p class="eyebrow light">Construction · Republic of Moldova</p>
         <h1>Construction <wbr>that<br><em>stands the test of time.</em></h1>
         <p class="home-hero-copy">Concrete, foundations, roads, houses and renovations — executed with discipline, clarity and respect for the work.</p>
         <div class="hero-actions">
-          <a class="button button-orange" href="contact/index.html#oferta">Start the project <span>↗</span></a>
-          <a class="text-link" href="proiecte/index.html">View projects <span>↓</span></a>
+          <a class="button button-orange" href="contact/index.html#oferta">Request the evaluation <span>↗</span></a>
+          <a class="text-link" href="viber://chat?number=%2B37369069195">Send pictures on Viber <span>↗</span></a>
         </div>
       </div>
       <div class="hero-meta"><span>CONDR GRUP S.R.L.</span><span>VATRA · REPUBLIC OF MOLDOVA</span><span>SCROLL ↓</span></div>
+    </section>
+
+    <section class="audience-gateway" aria-label="Choose the project type">
+      <a class="audience-card audience-private reveal" href="servicii/index.html">
+        <span class="audience-index">01 · NATURAL PERSONS</span>
+        <h2>House, yard or renovation?</h2>
+        <p>See concrete work, foundations, driveways, turnkey homes, renovations and demolitions.</p>
+        <span class="audience-action">Choose the service ↗</span>
+      </a>
+      <a class="audience-card audience-business reveal" href="b2b/index.html">
+        <span class="audience-index">02 · COMPANIES & B2B</span>
+        <h2>Looking for an execution team?</h2>
+        <p>Capacity for developers, contractors, commercial premises, industrial facilities and administrators.</p>
+        <span class="audience-action">See B2B profile ↗</span>
+      </a>
+    </section>
+
+    <section class="proof-strip" aria-label="Evidence Condr Grup">
+      <a href="proiecte/index.html#referinte"><strong>06+</strong><span>reference projects presented</span></a>
+      <a href="proiecte/imonna-grup.html"><strong>400 m²</strong><span>mechanized finished concrete at Imona Grup</span></a>
+      <a href="proiecte/port-mall-demolari.html"><strong>2023–2026</strong><span>demolition work at Port Mall</span></a>
     </section>
 
     <section class="section container">
@@ -105,12 +243,12 @@
         </div>
         <div class="carousel" aria-label="Projects Condr Grup">
           <div class="carousel-track">
-            <a class="carousel-card" href="proiecte/index.html#bac"><img loading="lazy" src="../assets/images/projects/bac-turnare.webp" alt="Concrete pouring in Bâc"><div><p>CONCRETE · BÂC</p><h3>Exterior concrete platform</h3></div></a>
-            <a class="carousel-card" href="proiecte/index.html#feredeuca"><img loading="lazy" src="../assets/images/projects/feredeuca-turnare.webp" alt="Concrete pouring in Feredeuca"><div><p>INDUSTRIAL CONCRETE · FEREDEUCA</p><h3>Industrial concrete floor</h3></div></a>
-            <a class="carousel-card" href="proiecte/index.html#demolari"><img loading="lazy" src="../assets/images/projects/demolare-acoperis.webp" alt="Concrete roof demolition"><div><p>DEMOLITION · PORTMALL</p><h3>Controlled roof demolition</h3></div></a>
-            <a class="carousel-card" href="proiecte/index.html#dumbrava"><img loading="lazy" src="../assets/images/projects/dumbrava-beton.webp" alt="Dumbrava concrete work"><div><p>CONCRETE · DUMBRAVA</p><h3>Residential concrete work</h3></div></a>
-            <a class="carousel-card" href="proiecte/index.html#renovari"><img loading="lazy" src="../assets/images/projects/gipscarton-oficiu.webp" alt="Office plasterboard works"><div><p>RENOVATION · COMMERCIAL SPACE</p><h3>Partitioning and finishing</h3></div></a>
-            <a class="carousel-card" href="proiecte/index.html#amenajari"><img loading="lazy" src="../assets/images/projects/pavaj.webp" alt="Landscaping with paving"><div><p>EXTERIOR ARRANGEMENT</p><h3>Paving and surface preparation</h3></div></a>
+            <a class="carousel-card" href="proiecte/index.html#bac"><img srcset="../assets/images/projects/bac-turnare-800.webp 800w, ../assets/images/projects/bac-turnare.webp 1600w" sizes="(max-width: 820px) 100vw, 50vw" decoding="async" width="1600" height="2844" loading="lazy" src="../assets/images/projects/bac-turnare.webp" alt="Concrete pouring in Bâc"><div><p>CONCRETE · BÂC</p><h3>Exterior concrete platform</h3></div></a>
+            <a class="carousel-card" href="proiecte/imonna-grup.html"><img srcset="../assets/images/projects/feredeuca-turnare-800.webp 800w, ../assets/images/projects/feredeuca-turnare.webp 1600w" sizes="(max-width: 820px) 100vw, 50vw" decoding="async" width="1600" height="2134" loading="lazy" src="../assets/images/projects/feredeuca-turnare.webp" alt="Concrete pouring on Feredeului street"><div><p>INDUSTRIAL CONCRETE · FEREDEUI</p><h3>400 m² for Imona Grup</h3></div></a>
+            <a class="carousel-card" href="proiecte/index.html#demolari"><img srcset="../assets/images/projects/demolare-acoperis-800.webp 800w, ../assets/images/projects/demolare-acoperis.webp 960w" sizes="(max-width: 820px) 100vw, 50vw" decoding="async" width="960" height="1280" loading="lazy" src="../assets/images/projects/demolare-acoperis.webp" alt="Concrete roof demolition"><div><p>DEMOLITION · PORTMALL</p><h3>Controlled roof demolition</h3></div></a>
+            <a class="carousel-card" href="proiecte/index.html#dumbrava"><img srcset="../assets/images/projects/dumbrava-beton-800.webp 800w, ../assets/images/projects/dumbrava-beton.webp 1200w" sizes="(max-width: 820px) 100vw, 50vw" decoding="async" width="1200" height="1600" loading="lazy" src="../assets/images/projects/dumbrava-beton.webp" alt="Dumbrava concrete work"><div><p>CONCRETE · DUMBRAVA</p><h3>Residential concrete work</h3></div></a>
+            <a class="carousel-card" href="proiecte/index.html#renovari"><img srcset="../assets/images/projects/gipscarton-oficiu-800.webp 800w, ../assets/images/projects/gipscarton-oficiu.webp 960w" sizes="(max-width: 820px) 100vw, 50vw" decoding="async" width="960" height="1280" loading="lazy" src="../assets/images/projects/gipscarton-oficiu.webp" alt="Office plasterboard works"><div><p>RENOVATION · COMMERCIAL SPACE</p><h3>Partitioning and finishing</h3></div></a>
+            <a class="carousel-card" href="proiecte/index.html#amenajari"><img srcset="../assets/images/projects/pavaj-800.webp 800w, ../assets/images/projects/pavaj.webp 1200w" sizes="(max-width: 820px) 100vw, 50vw" decoding="async" width="1200" height="1600" loading="lazy" src="../assets/images/projects/pavaj.webp" alt="Landscaping with paving"><div><p>EXTERIOR ARRANGEMENT</p><h3>Paving and surface preparation</h3></div></a>
           </div>
         </div>
         <div class="carousel-controls"><button class="carousel-button" type="button" data-carousel-prev aria-label="The previous project">←</button><button class="carousel-button" type="button" data-carousel-next aria-label="The next project">→</button></div>
@@ -131,26 +269,26 @@
     </section>
 
     <section class="b2b-band" id="b2b">
-      <div class="b2b-visual"><img loading="lazy" src="../assets/images/projects/feredeuca-armare.webp" alt="Reinforcement for industrial flooring"></div>
+      <div class="b2b-visual"><img srcset="../assets/images/projects/feredeuca-armare-800.webp 800w, ../assets/images/projects/feredeuca-armare.webp 1600w" sizes="(max-width: 820px) 100vw, 50vw" decoding="async" width="1600" height="2134" loading="lazy" src="../assets/images/projects/feredeuca-armare.webp" alt="Reinforcement for industrial flooring"></div>
       <div class="b2b-content reveal">
         <p class="eyebrow">For companies</p>
         <h2 class="display">A partner<br>that <em>delivers.</em></h2>
         <p>We work with developers, general contractors, architects, property managers and companies that need a well-organized team in the field.</p>
         <ul class="check-list"><li>Concrete and infrastructure works</li><li>Project subcontracting</li><li>Bidding by volumes and documentation</li><li>Interventions in commercial and industrial spaces</li></ul>
-        <a class="button button-dark" href="b2b/index.html">Discover B2B <span>↗</span></a>
+        <div class="button-row"><a class="button button-dark" href="b2b/index.html">See the B2B profile <span>↗</span></a><a class="text-link" href="b2b/index.html#brief">Send the brief</a></div>
       </div>
     </section>
 
-    <section class="section container">
+    <section class="section container proof-principles">
       <div class="split">
         <div class="reveal">
-          <p class="eyebrow">Verified reviews</p>
-          <h2 class="display">Trust is<br><em>built.</em></h2>
+          <p class="eyebrow">Evidence before the offer</p>
+          <h2 class="display">Trust begins<br>with things <em>verifiable.</em></h2>
         </div>
         <div class="split-copy reveal">
-          <p class="lead">Have you worked with the Condr Grup team?</p>
-          <p>Tell us how the collaboration was. The review goes directly to the company and is published only after verification and with your consent.</p>
-          <a class="button button-dark" href="recenzii/index.html#lasa-recenzie">Leave a review <span>↗</span></a>
+          <p class="lead">Real photos, role explained and public legal data.</p>
+          <p>We present separately the images from the Condr Grup archive and the images used only for the identification of the objective. The offer is built according to location, measurements, access and exact purpose.</p>
+          <div class="button-row"><a class="button button-dark" href="proiecte/index.html">Check out the projects <span>↗</span></a><a class="text-link" href="recenzii/index.html">Reviews & feedback</a></div>
         </div>
       </div>
     </section>
@@ -161,15 +299,17 @@
           <p class="eyebrow">Request a quote</p>
           <h2 class="display">Have a project?<br><em>Let’s talk.</em></h2>
           <p class="lede">Send us your basic information. We come back for details and determine the next step.</p>
-          <div class="direct-list"><a href="tel:+37369069195">+373 69 069 195</a><a href="mailto:condru01@gmail.com">condru01@gmail.com</a></div>
+          <div class="direct-list"><a href="tel:+37369069195">+373 69 069 195</a><a href="viber://chat?number=%2B37369069195">Send photos on Viber ↗</a><a href="mailto:condru01@gmail.com">condru01@gmail.com</a></div>
+          <ol class="after-request"><li>We confirm the type of work and the location.</li><li>We clarify measurements, photos or documentation.</li><li>We determine the visit and the next step for bidding.</li></ol>
         </div>
-        <form class="form-grid reveal" data-email-form data-subject="Request for offer from CondrGrup">
+        <form class="form-grid reveal" data-email-form data-conversion-form="home-quote" data-subject="Request for offer from CondrGrup">
           <label class="form-field">Name and surname<input name="Nume" required autocomplete="name" placeholder="Ex. Ion Popescu"></label>
           <label class="form-field">Telephone<input name="Telefon" required autocomplete="tel" placeholder="+373 ..."></label>
+          <label class="form-field">Customer type<select name="Tip client" required><option value="">Select</option><option>Private client</option><option>Company / B2B</option></select></label>
           <label class="form-field">The type of work<select name="Lucrare" required><option value="">Select</option><option>Concrete / platform</option><option>Road / landscaping</option><option>Foundation / structure</option><option>Turnkey house</option><option>Renovation</option><option>Demolition</option><option>B2B project</option></select></label>
           <label class="form-field">Location<input name="Localitate" placeholder="Where is the work?"></label>
           <label class="form-field full">Details<textarea name="Detalii" rows="4" placeholder="Dimensions, term, current situation..."></textarea></label>
-          <input type="text" name="_honey" tabindex="-1" autocomplete="off" hidden>
+        <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-label="Do not fill this field" hidden>
           <label class="form-consent"><input type="checkbox" required> I agree that the data entered will be used to respond to my request.</label>
           <div><button class="button button-orange" type="submit">Send request <span>↗</span></button></div>
           <p class="form-status" aria-live="polite"></p>
