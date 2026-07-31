@@ -1,0 +1,31 @@
+{
+  "slug": "project-slug",
+  "status": "draft",
+  "category": "beton",
+  "client": {
+    "displayName": "Client privat",
+    "namePublicationApproved": false
+  },
+  "location": {
+    "public": "mun. Chișinău",
+    "exactAddressPublic": false
+  },
+  "claim": {
+    "year": "",
+    "role": "",
+    "quantity": "",
+    "scopeConfirmed": false
+  },
+  "media": [
+    {
+      "src": "assets/images/projects/project-slug/01-context.webp",
+      "type": "owned-jobsite",
+      "phase": "before",
+      "sameProjectConfirmed": false
+    }
+  ],
+  "publication": {
+    "approved": false,
+    "approvedAt": null
+  }
+}

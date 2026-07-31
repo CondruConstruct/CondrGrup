@@ -4,23 +4,19 @@ import process from 'node:process';
 
 const projectRoot = path.resolve(import.meta.dirname, '..');
 const cacheFile = path.join(import.meta.dirname, 'translations.json');
-const sourceFiles = [
-  'index.html',
-  '404.html',
-  'confidentialitate.html',
-  'servicii/index.html',
-  'servicii/beton-platforme.html',
-  'servicii/drumuri-amenajari.html',
-  'servicii/fundatii-structuri.html',
-  'servicii/case-la-cheie.html',
-  'servicii/renovari.html',
-  'servicii/demolari.html',
-  'proiecte/index.html',
-  'b2b/index.html',
-  'despre/index.html',
-  'recenzii/index.html',
-  'contact/index.html'
-];
+async function discoverSourceFiles(directory = projectRoot, prefix = '') {
+  const files = [];
+  for (const entry of await fs.readdir(directory, { withFileTypes: true })) {
+    if (entry.isDirectory() && ['.git', 'assets', 'en', 'ru', 'tools', 'node_modules'].includes(entry.name)) continue;
+    const absolute = path.join(directory, entry.name);
+    const relative = path.posix.join(prefix, entry.name);
+    if (entry.isDirectory()) files.push(...await discoverSourceFiles(absolute, relative));
+    else if (entry.name.endsWith('.html')) files.push(relative);
+  }
+  return files.sort();
+}
+
+const sourceFiles = await discoverSourceFiles();
 
 const localeNames = {
   en: 'English',
@@ -29,6 +25,21 @@ const localeNames = {
 
 const manual = {
   en: {
+    'Bomond': 'Bomond',
+    'Bomond.': 'Bomond.',
+    'Bomond, Port Mall': 'Bomond, Port Mall',
+    'Bomond · Port Mall': 'Bomond · Port Mall',
+    'Imona Grup': 'Imona Grup',
+    'IMONA GRUP': 'IMONA GRUP',
+    'Botanica.': 'Botanica.',
+    'Rol Condr Grup': 'Condr Grup role',
+    'An': 'Year',
+    'Turnare + elicopterizare': 'Concrete pour + power-trowel finish',
+    'Fotografii din execuție': 'Photos from the worksite',
+    'Imagine de identificare a obiectivului; nu reprezintă fotografia execuției Condr Grup.': 'Property identification image; it is not a photograph of Condr Grup’s work.',
+    'Imagine de identificare a companiei; nu reprezintă fotografia execuției Condr Grup.': 'Company identification image; it is not a photograph of Condr Grup’s work.',
+    'FOTOGRAFIE DIN ARHIVA CONDR GRUP': 'PHOTO FROM THE CONDR GRUP ARCHIVE',
+    'FOTOGRAFIE REPREZENTATIVĂ DIN ARHIVA CONDR GRUP': 'REPRESENTATIVE PHOTO FROM THE CONDR GRUP ARCHIVE',
     'width=device-width,initial-scale=1': 'width=device-width,initial-scale=1',
     'Condr Grup — Construcții care rămân în timp': 'Condr Grup — Construction that stands the test of time',
     'Construcții care': 'Construction <wbr>that',
@@ -328,6 +339,21 @@ const manual = {
     'Adăugăm treptat proiecte și fotografii noi, după confirmarea detaliilor și acordul de publicare.': 'We add new projects and photographs as details are confirmed and publication is approved.'
   },
   ru: {
+    'Bomond': 'Bomond',
+    'Bomond.': 'Bomond.',
+    'Bomond, Port Mall': 'Bomond, Port Mall',
+    'Bomond · Port Mall': 'Bomond · Port Mall',
+    'Imona Grup': 'Imona Grup',
+    'IMONA GRUP': 'IMONA GRUP',
+    'Botanica.': 'Botanica.',
+    'Rol Condr Grup': 'Роль Condr Grup',
+    'An': 'Год',
+    'Turnare + elicopterizare': 'Заливка + затирка бетоноотделочной машиной',
+    'Fotografii din execuție': 'Фотографии с объекта',
+    'Imagine de identificare a obiectivului; nu reprezintă fotografia execuției Condr Grup.': 'Изображение для идентификации объекта; это не фотография работ Condr Grup.',
+    'Imagine de identificare a companiei; nu reprezintă fotografia execuției Condr Grup.': 'Изображение для идентификации компании; это не фотография работ Condr Grup.',
+    'FOTOGRAFIE DIN ARHIVA CONDR GRUP': 'ФОТО ИЗ АРХИВА CONDR GRUP',
+    'FOTOGRAFIE REPREZENTATIVĂ DIN ARHIVA CONDR GRUP': 'РЕПРЕЗЕНТАТИВНОЕ ФОТО ИЗ АРХИВА CONDR GRUP',
     'width=device-width,initial-scale=1': 'width=device-width,initial-scale=1',
     'Condr Grup — Construcții care rămân în timp': 'Condr Grup — Строительство на долгие годы',
     'Construcții care': 'Строительство, <wbr>которое',
