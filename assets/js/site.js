@@ -438,6 +438,8 @@
             body: JSON.stringify(data)
           });
           if (!response.ok) throw new Error('Form unavailable');
+          const result = await response.json();
+          if (result.success !== true && result.success !== 'true') throw new Error('Submission not accepted');
           status.textContent = t.sent;
           status.classList.add('success');
           form.reset();

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "grenoble", "slug": "grenoble-oficiu.html", "number": "01",
+    "address": "str. Grenoble 259/9, Chișinău", "coordinates": [46.973646852, 28.851803533],
+    "source": "https://www.waze.com/bg/live-map/directions/2599-str.-grenoble-chisinau?to=place.w.18940374.189076057.13967317",
+    "ro": {"title": "Oficiu · Grenoble", "category": "Reparație capitală", "scope": "Reparația capitală a unui oficiu pe strada Grenoble 259/9.", "detail": "Un spațiu de lucru, regândit pentru utilizarea de zi cu zi. Proiectul Condr Grup cuprinde reparația capitală a oficiului.", "facts": ["Oficiu", "Reparație capitală", "Grenoble 259/9"]},
+    "en": {"title": "Office · Grenoble", "category": "Complete renovation", "scope": "Complete renovation of an office at 259/9 Grenoble Street.", "detail": "A workspace renewed for everyday use. Condr Grup’s project covers the complete renovation of the office.", "facts": ["Office", "Complete renovation", "259/9 Grenoble Street"]},
+    "ru": {"title": "Офис · Гренобле", "category": "Капитальный ремонт", "scope": "Капитальный ремонт офиса на улице Гренобле, 259/9.", "detail": "Рабочее пространство для повседневного использования. Проект Condr Grup включает капитальный ремонт офиса.", "facts": ["Офис", "Капитальный ремонт", "Гренобле, 259/9"]}
+  },
+  {
+    "id": "feredeului", "slug": "feredeului-4.html", "number": "02",
+    "address": "str. Feredeului 4, Chișinău", "coordinates": [47.027245, 28.854821],
+    "source": "https://yandex.com/maps/10313/kishinev/house/ZkEYfgJkQUcGQFptfXxzdn5nYQ%3D%3D/",
+    "ro": {"title": "Curte & angar", "category": "Beton & construcții metalice", "scope": "Turnarea unei curți de 500 m² și montarea unui angar de 121 m² pe strada Feredeului 4.", "detail": "Două lucrări în același amplasament: o curte betonată de 500 m² și un angar de 121 m². O intervenție care leagă spațiul exterior de cel acoperit.", "facts": ["500 m² · curte", "121 m² · angar", "Feredeului 4"]},
+    "en": {"title": "Yard & hangar", "category": "Concrete & steel construction", "scope": "Concrete pouring for a 500 m² yard and installation of a 121 m² hangar at 4 Feredeului Street.", "detail": "Two works at one location: a 500 m² concrete yard and a 121 m² hangar, connecting outdoor and covered space.", "facts": ["500 m² · yard", "121 m² · hangar", "4 Feredeului Street"]},
+    "ru": {"title": "Двор и ангар", "category": "Бетон и металлоконструкции", "scope": "Бетонирование двора площадью 500 м² и монтаж ангара площадью 121 м² на улице Фередеулуй, 4.", "detail": "Две работы на одном участке: бетонный двор площадью 500 м² и ангар площадью 121 м², объединяющие открытое и крытое пространство.", "facts": ["500 м² · двор", "121 м² · ангар", "Фередеулуй, 4"]}
+  },
+  {
+    "id": "bomond", "slug": "bomond-port-mall.html", "number": "03",
+    "address": "Port Mall · str. Mihail Sadoveanu 42/6, Chișinău", "coordinates": [47.07077, 28.88863],
+    "source": "https://port.md/ru", "locationNote": "Mall building center; not a restaurant entrance.",
+    "ro": {"title": "Bomond · Port Mall", "category": "Amenajare restaurant", "scope": "Lucrări de amenajare la cheie pentru restaurantul Bomond din Port Mall.", "detail": "Un proiect de amenajare pentru restaurantul Bomond, în centrul comercial Port Mall din Chișinău. Rolul Condr Grup: execuția lucrărilor la cheie în spațiul restaurantului.", "facts": ["Restaurant", "Amenajare la cheie", "Port Mall"]},
+    "en": {"title": "Bomond · Port Mall", "category": "Restaurant fit-out", "scope": "Turnkey fit-out for the Bomond restaurant in Port Mall.", "detail": "A fit-out project for the Bomond restaurant in Chișinău’s Port Mall shopping centre. Condr Grup’s role: turnkey works within the restaurant space.", "facts": ["Restaurant", "Turnkey fit-out", "Port Mall"]},
+    "ru": {"title": "Bomond · Port Mall", "category": "Отделка ресторана", "scope": "Работы под ключ в ресторане Bomond в торговом центре Port Mall.", "detail": "Проект обустройства ресторана Bomond в торговом центре Port Mall в Кишинёве. Роль Condr Grup: выполнение работ под ключ в помещении ресторана.", "facts": ["Ресторан", "Работы под ключ", "Port Mall"]}
+  }
+]
