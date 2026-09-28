@@ -17,3 +17,7 @@
 ## Photo and vector release
 
 The first hero slide uses an original six-second SVG assembly (construction-scene.css/js), with a ten-second opening dwell. It transitions to real renovation and structure photography. The pause control pauses the vector animation too; reduced motion renders the final building. Header colors follow the active background. Gallery captions describe actual work stages in RO/EN/RU. New phone images are selected from 517 private camera photos copied over USB; only four selected WebP pairs enter the repository.
+
+## Navigation clarification
+
+Header service names and mobile service rows navigate directly. Only the explicit Menu button opens the navigation dialog. Current service is marked, language popup closes before dialogs open, background scrolling is locked while a dialog is open, and the menu close row stays visible. Desktop links collapse below1200px to preserve space across locales. Inactive hero text is hidden immediately during photo crossfades. Sticky service-bar height controls anchor-scroll clearance.

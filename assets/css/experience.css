@@ -585,3 +585,30 @@ html.motion-ready .ex-reveal.is-visible { opacity: 1; transform: none; }
 .ex-hero.has-photos.is-construction-active .ex-slide.is-active .ex-slide-copy,
 .ex-hero.has-photos.is-construction-active .ex-slide.is-active .ex-slide-copy p { color: #171a20; text-shadow: none; }
 .ex-hero.has-photos.is-construction-active .ex-hero-brandline { color: #5c5e62; text-shadow: none; }
+
+/* Direct, predictable navigation; only the explicit Menu button opens a panel. */
+html.ex-dialog-open { overflow: hidden; scrollbar-gutter: stable; }
+.ex-nav > a[aria-current="page"] { background: #171a2010; text-decoration: underline; text-underline-offset: 6px; }
+.ex-menu-title { font-size: 20px; font-weight: 600; }
+.ex-mobile-main nav > .ex-mobile-service { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 15px 0; font-size: 18px; line-height: 1.35; }
+.ex-mobile-service[aria-current="page"] { color: #3e6ae1; }
+.ex-mobile-service span { flex-shrink: 0; }
+.ex-menu > .ex-dialog-head { position: sticky; top: -24px; z-index: 2; padding-block: 12px; background: #fff; }
+.ex-menu { overflow-y: auto; overscroll-behavior: contain; }
+.ex-nav { min-width: 0; }
+.ex-header.on-dark .ex-nav > a:hover,.ex-header.on-dark .ex-nav > a[aria-current="page"] { background: #ffffff26; }
+.ex-language summary::after { content: ''; width: 5px; height: 5px; border-right: 1px solid currentColor; border-bottom: 1px solid currentColor; transform: rotate(45deg); margin-left: 6px; margin-top: -3px; }
+.ex-language summary { display: flex; align-items: center; justify-content: center; }
+.ex-language[open] summary::after { transform: rotate(225deg); margin-top: 3px; }
+@media (max-width:1199px) { .ex-nav { display: none; } }
+
+/* Crossfade photographs without stacking two sets of text and buttons. */
+.ex-hero .ex-slide:not(.is-active) .ex-slide-copy { visibility: hidden; pointer-events: none; }
+.ex-hero .ex-slide.is-active .ex-slide-copy { visibility: visible; }
+
+@media (max-width:700px) {
+ .ex-service-bar { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 12px; }
+ .ex-service-bar > a { max-width: none; }
+ .ex-service-bar nav { min-width: 0; justify-content: flex-end; }
+ .ex-service-bar nav > button { width: 100%; max-width: 190px; white-space: normal; line-height: 1.35; }
+}

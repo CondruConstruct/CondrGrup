@@ -6,48 +6,31 @@
  const t=text[lang],root=document.documentElement.dataset.root||'';
  const page=s=>`${root}${lang==='ro'?'':lang+'/'}${s}`;
  const header=document.querySelector('.ex-header');
- const mega=document.querySelector('.ex-mega-panel');
- const backdrop=document.querySelector('.ex-menu-backdrop');
  const menu=document.getElementById('ex-menu');
  const quote=document.getElementById('quote-dialog');
- let quoteTrigger=null,megaTrigger=null,mobileTrigger=null;
- const closeMega=()=>{mega.hidden=true;backdrop.hidden=true;document.querySelectorAll('[data-service-menu]').forEach(b=>b.setAttribute('aria-expanded','false'));header.classList.remove('menu-active');};
- const openMega=button=>{
-   if(innerWidth<1100)return;
-   megaTrigger=button;mega.hidden=false;backdrop.hidden=false;header.classList.add('menu-active');
-   document.querySelectorAll('[data-service-menu]').forEach(b=>b.setAttribute('aria-expanded',String(b===button)));
-   document.querySelectorAll('[data-menu-card]').forEach(card=>card.classList.toggle('is-selected',card.dataset.menuCard===button.dataset.serviceMenu));
- };
- document.querySelectorAll('[data-service-menu]').forEach(button=>{
-   button.addEventListener('pointerenter',event=>{if(event.pointerType==='mouse')openMega(button);});
-   button.addEventListener('click',()=>{if(button.getAttribute('aria-expanded')==='true')closeMega();else openMega(button);});
-   button.addEventListener('keydown',event=>{if(event.key==='ArrowDown'){event.preventDefault();openMega(button);mega.querySelector('a').focus();}});
- });
- mega.addEventListener('pointerleave',event=>{if(event.pointerType==='mouse'&&!header.contains(event.relatedTarget))closeMega();});
- backdrop.addEventListener('pointerenter',closeMega);backdrop.addEventListener('click',closeMega);
- const resetMenu=()=>{menu.querySelector('.ex-mobile-main').hidden=false;menu.querySelector('.ex-mobile-detail').hidden=true;menu.querySelector('[data-menu-back]').hidden=true;};
- document.querySelector('.ex-menu-toggle').addEventListener('click',()=>{closeMega();resetMenu();menu.showModal();});
- menu.querySelector('[data-menu-back]').addEventListener('click',()=>{resetMenu();mobileTrigger?.focus();});
- document.querySelectorAll('[data-mobile-service]').forEach(button=>button.addEventListener('click',()=>{
-   mobileTrigger=button;const s=services.find(s=>s.id===button.dataset.mobileService),detail=menu.querySelector('.ex-mobile-detail');
-   menu.querySelector('.ex-mobile-main').hidden=true;detail.hidden=false;menu.querySelector('[data-menu-back]').hidden=false;
-   detail.innerHTML=`<h2>${s[lang].name}</h2><p>${s[lang].description}</p><a class="ex-button secondary" href="${page('servicii/'+s.id+'.html')}">${t.learn}</a><button class="ex-button" type="button" data-quote-service="${s.id}">${t.quote}</button>`;
-   menu.querySelector('[data-menu-back]').focus();
- }));
+ const menuToggle=document.querySelector('.ex-menu-toggle');
+ const language=document.querySelector('.ex-language');
+ let quoteTrigger=null;
+ const closeLanguage=()=>language?.removeAttribute('open');
+ const syncDialogState=()=>document.documentElement.classList.toggle('ex-dialog-open',menu.open||quote.open);
+ menuToggle.addEventListener('click',()=>{closeLanguage();menu.showModal();menuToggle.setAttribute('aria-expanded','true');syncDialogState();});
+ menu.addEventListener('close',()=>{menuToggle.setAttribute('aria-expanded','false');syncDialogState();if(!quote.open)menuToggle.focus();});
  document.addEventListener('click',event=>{
    const closer=event.target.closest('[data-close-dialog]');if(closer)closer.closest('dialog').close();
    const trigger=event.target.closest('[data-quote-service]');if(!trigger)return;
-   quoteTrigger=trigger;closeMega();if(menu.open)menu.close();
+   quoteTrigger=trigger;closeLanguage();if(menu.open)menu.close();
    const select=quote.querySelector('[name="Lucrare"]');select.value=trigger.dataset.quoteService||'';
    quote.querySelector('.form-status').textContent='';
-   quote.showModal();(select.value?quote.querySelector('[name="Nume"]'):select).focus();
+   quote.showModal();syncDialogState();(select.value?quote.querySelector('[name="Nume"]'):select).focus();
    window.CondrGrup?.trackConversion('quote_open',{service:select.value||'unspecified'});
  });
- quote.addEventListener('close',()=>{if(quoteTrigger?.isConnected&&quoteTrigger.checkVisibility()&&!quoteTrigger.closest('[inert],dialog:not([open])'))quoteTrigger.focus();else if(megaTrigger?.checkVisibility())megaTrigger.focus();else document.querySelector('.ex-menu-toggle').focus();});
+ quote.addEventListener('close',()=>{syncDialogState();if(quoteTrigger?.isConnected&&quoteTrigger.checkVisibility()&&!quoteTrigger.closest('[inert],dialog:not([open])'))quoteTrigger.focus();else document.querySelector('.ex-menu-toggle').focus();});
  [quote,menu].forEach(dialog=>dialog.addEventListener('click',event=>{if(event.target===dialog){const r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)dialog.close();}}));
- document.addEventListener('keydown',event=>{if(event.key==='Escape'){const restore=!mega.hidden&&mega.contains(document.activeElement);closeMega();if(restore)megaTrigger?.focus();document.querySelector('.ex-language')?.removeAttribute('open');}});
- document.addEventListener('focusin',event=>{if(!mega.hidden&&!mega.contains(event.target)&&!header.contains(event.target))closeMega();});
- document.addEventListener('click',event=>{if(!event.target.closest('.ex-language'))document.querySelector('.ex-language')?.removeAttribute('open');});
+ document.addEventListener('keydown',event=>{if(event.key==='Escape'&&language?.open){closeLanguage();language.querySelector('summary').focus();}});
+ document.addEventListener('click',event=>{if(!event.target.closest('.ex-language'))closeLanguage();});
+ document.addEventListener('focusin',event=>{if(language?.open&&!language.contains(event.target))closeLanguage();});
+ const serviceBar=document.querySelector('.ex-service-bar');
+ if(serviceBar)new ResizeObserver(()=>{document.documentElement.style.scrollPaddingTop=`${header.offsetHeight+serviceBar.offsetHeight+16}px`;}).observe(serviceBar);
  const photoHero=document.querySelector('.ex-hero.has-photos,.ex-service-hero.has-photos');
  const updateHeader=()=>{
    const scrolled=scrollY>30;
@@ -57,7 +40,7 @@
    header.classList.toggle('on-dark',overPhoto&&!scrolled&&!photoHero.classList.contains('is-construction-active'));
  };
  if(photoHero)new MutationObserver(updateHeader).observe(photoHero,{attributes:true,attributeFilter:['class']});
- updateHeader();addEventListener('scroll',updateHeader,{passive:true});addEventListener('resize',()=>{if(innerWidth<1100)closeMega();updateHeader();});
+ updateHeader();addEventListener('scroll',updateHeader,{passive:true});addEventListener('resize',updateHeader);
  document.querySelectorAll('.ex-catalog-section').forEach(section=>{
    const track=section.querySelector('.ex-catalog'),prev=section.querySelector('[data-catalog-prev]'),next=section.querySelector('[data-catalog-next]');
    const update=()=>{prev.disabled=track.scrollLeft<2;next.disabled=track.scrollLeft+track.clientWidth>=track.scrollWidth-3;};
