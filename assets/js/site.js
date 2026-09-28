@@ -236,6 +236,7 @@
   }
 
   function injectShell() {
+    if (window.CondrExperienceShell) return;
     document.body.insertAdjacentHTML('afterbegin', `
       <a class="skip-link" href="#continut">${t.skip}</a>
       <div class="site-grain" aria-hidden="true"></div>
@@ -308,6 +309,7 @@
   }
 
   function bindNavigation() {
+    if (window.CondrExperienceShell) return;
     const header = document.querySelector('.site-header');
     const toggle = document.querySelector('.menu-toggle');
     const language = document.querySelector('.language');
@@ -424,6 +426,13 @@
         const data = Object.fromEntries(new FormData(form).entries());
         if (data._honey) return;
         delete data._honey;
+        data.Pagina = window.location.pathname;
+        const serviceSelect = form.querySelector('select[name="Lucrare"]');
+        if (serviceSelect?.value) data.Lucrare = serviceSelect.selectedOptions[0].textContent;
+        const campaign = new URLSearchParams(window.location.search);
+        for (const key of ['utm_source','utm_medium','utm_campaign']) {
+          if (campaign.has(key)) data[key] = campaign.get(key).slice(0,200);
+        }
         data._subject = form.dataset.subject || t.formSubject;
         data._template = 'table';
         data._captcha = 'false';

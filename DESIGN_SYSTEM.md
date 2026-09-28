@@ -1,29 +1,15 @@
 # Condr Grup web design system
 
-## Tokens
+## Current direction — 28 September 2026
 
-- Ink: `#111111`
-- Paper: `#f7f4ee`
-- Light paper: `#ffffff`
-- Concrete: `#ece8e1`
-- Construction red: `#c7252a` (hover `#a81e22`)
-- Display type: Oswald
-- Body and labels: Inter
-- Accent serif: Playfair Display
-
-The September 2026 redesign overrides base layout tokens in `assets/css/redesign.css`, loaded after `site.css`. Existing `--orange` token names now resolve to construction red to preserve shared components.
-
-## Rules
-
-- Use the existing Condr Grup logo instead of all page photographs until the owner supplies selected project imagery.
-- Use red for calls to action and small emphasis, plus the service strip and deliberate CTA bands.
-- Reuse the shared header, footer and quick-contact widget in `assets/js/site.js`. Keep the experimental construction-story widget disabled.
-- Use independently authored motion: brief hero assembly, side-entry reveals, tap/keyboard project flips and a reading-progress line. Do not hijack scrolling or hide essential details behind hover.
-- Keep project names visible outside the flip. Map and cards use the same three-project data source. Keep map attribution visible and geographic precision limited to the address/building.
-- Keep claims measurable and verified. Do not invent clients, quantities, dates, certificates, guarantees or project results.
-- Label demonstration content visibly until replaced.
-- Every interactive element must be keyboard-accessible and retain a visible text label or `aria-label`.
-- Respect `prefers-reduced-motion`.
-- New images belong in `assets/images/` and should be WebP, sensibly compressed and lazily loaded below the fold.
-- New pages use `data-root` on `<html>` so shared links resolve correctly on GitHub Pages.
-- Romanian is the source edition. Russian and English are active in `/ru/` and `/en/`, with matching page slugs. Edit redesigned copy in `tools/build-redesign.mjs` and project facts in `content/projects/featured.json`.
+- Colors: ink #171a20, body #393c41, muted #5c5e62, surfaces #f4f4f4 and #fff, primary action #3e6ae1.
+- System sans typography; 48px desktop hero and 40px wide feature headings. No proprietary reference fonts/assets.
+- Service-first navigation: six existing categories, desktop catalog menu, mobile category drilldown, paired enquiry/detail actions.
+- The first block uses three layered image/text slides, seven-second dwell, visible controls and pause. Ordinary page scrolling, keyboard operation and reduced-motion support are required.
+- Shared shell: assets/js/experience-shell.js. Behavior: experience.js. Theme: experience.css, following legacy base styles.
+- Build source: content/experience.json and tools/build-experience.mjs. Project facts and all maps share content/projects/featured.json.
+- Existing logo placeholders remain until owner selects photographs. Do not assign unrelated worksite photos to a featured project.
+- Lead flow: service, name and telephone required; location/message optional; consent required. Native modal and full contact page share the existing FormSubmit endpoint. No invented pricing, scheduling or guaranteed outcomes.
+- Keep maps lazy, attribution visible and an address list usable without tiles. Coordinates identify addresses/buildings, not surveyed entrances.
+- Preserve RO/EN/RU routes, semantic headings, visible focus, native dialogs, canonical metadata and legacy URLs.
+- The previous design is preserved at https://github.com/CondruConstruct/CondrGrup-archive-2026-09-28.

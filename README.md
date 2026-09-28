@@ -16,13 +16,14 @@ Serve this directory with any static web server and open `http://127.0.0.1:4173/
 
 ## Content builds
 
-Existing Romanian HTML pages are the editorial source for legacy content. The redesigned homepage, project index and three featured case studies are generated in all three languages by `tools/build-redesign.mjs`; their project facts and map coordinates live in `content/projects/featured.json`.
+The current service-first experience is generated from `content/experience.json`, localized interface copy in `tools/build-experience.mjs`, and the verified project facts/map coordinates in `content/projects/featured.json`.
 
-1. Run `node tools/build-locales.mjs` to regenerate English and Russian pages.
-2. Run `node tools/polish-locales.mjs` to normalize brand names and construction terminology.
-3. Run `node tools/build-redesign.mjs` to rebuild the new pages and apply the shared theme and logo placeholders.
-4. Run `node tools/build-seo.mjs` to apply canonical metadata, language alternates, sitemap, and crawler rules.
-5. Run `node tools/validate-site.mjs` before publishing. For edits limited to the redesigned pages, start at step 3.
+1. Run `node tools/build-experience.mjs` to rebuild home, service, contact, B2B and featured project pages in Romanian, English and Russian, plus the shared catalog and shell references.
+2. Run `node tools/build-seo.mjs` for canonical metadata, language alternates, sitemap and crawler rules.
+3. Run `node tools/validate-site.mjs` before publishing.
+4. Preview using `python tools/preview.py` (loopback port 4173, caching disabled).
+
+Legacy company/review/privacy/case-study pages retain their editorial HTML. The older locale/redesign generators are historical migration tools and must not run after the current experience build: they can replace its content. Set `useServicePhotos` in `content/experience.json` only after the owner selects photos. Featured project images remain logo placeholders.
 
 The three featured projects are Grenoble 259/9 (office renovation), Feredeului 4 (500 m² yard and 121 m² hangar), and Bomond at Port Mall. Older case-study URLs remain accessible for compatibility but are not part of the featured portfolio. The maps mark addresses/buildings, not surveyed entrances; coordinate evidence is retained in the data file.
 
@@ -45,6 +46,6 @@ The apex domain uses GitHub Pages `A` records. For the recommended `www` redirec
 
 - The experimental 30-second construction widget is preserved behind `FEATURES.buildStory = false` in `assets/js/site.js`.
 - The September redesign displays the existing Condr Grup logo instead of photographs. Original image assets are retained for future owner selection; no replacement project photos have been published.
-- The visual direction is independently implemented, inspired by the RD Perez reference palette and interactions. No reference source code, imagery, videos or copy is reused.
+- The current visual direction is independently implemented, inspired by Tesla service navigation and a Vastavit-style layered opening. The September 22 red/charcoal version is preserved in the private archived repository `CondruConstruct/CondrGrup-archive-2026-09-28`. No reference source code, imagery, videos or copy is reused.
 - Social profile positions are intentionally placeholders until official Facebook, Instagram, and TikTok URLs are supplied.
 - Canonical URLs in `tools/build-seo.mjs` must be updated if the production domain changes.
