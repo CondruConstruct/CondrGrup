@@ -1,12 +1,355 @@
 {
-  "useServicePhotos": false,
-  "version": "20260928-1",
+  "useServicePhotos": true,
+  "version": "20260928-2",
   "services": [
-    {"id":"beton-platforme","image":"projects/feredeuca-finisare.webp","position":"center 56%","ro":{"short":"Beton","name":"Beton și platforme","tagline":"Curți, parcări și pardoseli. O bază pentru fiecare zi.","description":"Turnări de beton pentru suprafețe rezidențiale, comerciale și industriale. Stabilim soluția după utilizarea spațiului și condițiile din teren.","benefits":["Curți și platforme","Parcări și acces","Pardoseli din beton"]},"en":{"short":"Concrete","name":"Concrete and platforms","tagline":"Yards, parking areas and floors. A foundation for everyday life.","description":"Concrete works for residential, commercial and industrial surfaces. We define the scope around the use of the space and the site conditions.","benefits":["Yards and platforms","Parking and access","Concrete floors"]},"ru":{"short":"Бетон","name":"Бетон и площадки","tagline":"Дворы, парковки и полы. Основа на каждый день.","description":"Бетонные работы для жилых, коммерческих и промышленных объектов. Объём работ определяем с учётом назначения пространства и условий на участке.","benefits":["Дворы и площадки","Парковки и подъезды","Бетонные полы"]}},
-    {"id":"fundatii-structuri","image":"projects/fundatie-armata.webp","position":"center","ro":{"short":"Fundații","name":"Fundații și structuri","tagline":"De la teren la structura pe care te bazezi.","description":"Pregătire, armare, cofrare și turnare pentru construcții noi sau extinderi, în baza documentației tehnice a proiectului.","benefits":["Pregătirea terenului","Cofraj și armare","Turnarea betonului"]},"en":{"short":"Foundations","name":"Foundations and structures","tagline":"From the ground to the structure you rely on.","description":"Preparation, reinforcement, formwork and concrete pouring for new buildings or extensions, following the project’s technical documentation.","benefits":["Site preparation","Formwork and reinforcement","Concrete pouring"]},"ru":{"short":"Фундаменты","name":"Фундаменты и конструкции","tagline":"От участка до надёжной основы здания.","description":"Подготовка, армирование, опалубка и заливка для новых зданий и пристроек в соответствии с технической документацией проекта.","benefits":["Подготовка участка","Опалубка и армирование","Заливка бетона"]}},
-    {"id":"renovari","image":"projects/gipscarton-oficiu.webp","position":"center 40%","ro":{"short":"Renovări","name":"Renovări și amenajări","tagline":"Un nou început pentru spațiul tău.","description":"Reparații capitale și amenajări pentru locuințe, oficii și spații comerciale. Organizăm lucrările după starea existentă și rezultatul dorit.","benefits":["Locuințe","Oficii","Spații comerciale"]},"en":{"short":"Renovations","name":"Renovation and fit-out","tagline":"A fresh start for your space.","description":"Complete renovations and fit-outs for homes, offices and commercial premises. Work is organised around the existing condition and the desired result.","benefits":["Homes","Offices","Commercial spaces"]},"ru":{"short":"Ремонт","name":"Ремонт и отделка","tagline":"Новое начало для вашего пространства.","description":"Капитальный ремонт и отделка жилья, офисов и коммерческих помещений. Организуем работы с учётом существующего состояния и желаемого результата.","benefits":["Жильё","Офисы","Коммерческие помещения"]}},
-    {"id":"drumuri-amenajari","image":"projects/pavaj.webp","position":"center 65%","ro":{"short":"Drumuri","name":"Drumuri și amenajări","tagline":"Acces mai bun. Spațiu exterior bine organizat.","description":"Amenajări exterioare, pavaj, borduri și trotuare pentru proprietăți private și companii. Evaluăm accesul, suprafața și utilizarea înainte de ofertare.","benefits":["Pavaj și borduri","Trotuare","Căi de acces"]},"en":{"short":"Roads","name":"Roads and exterior works","tagline":"Better access. A well-organised outdoor space.","description":"Exterior improvements, paving, kerbs and paths for private properties and businesses. We review access, area and intended use before quoting.","benefits":["Paving and kerbs","Paths","Access roads"]},"ru":{"short":"Дороги","name":"Дороги и благоустройство","tagline":"Удобный доступ. Продуманное внешнее пространство.","description":"Благоустройство, мощение, бордюры и тротуары для частных объектов и компаний. Перед предложением оцениваем доступ, площадь и назначение.","benefits":["Мощение и бордюры","Тротуары","Подъездные пути"]}},
-    {"id":"case-la-cheie","image":"projects/structura-beton.webp","position":"center","ro":{"short":"Case","name":"Case la cheie","tagline":"Mai aproape de casa pe care ți-o dorești.","description":"Execuție și coordonarea etapelor de construcție, de la fundație și structură la finisaje. Pachetul exact se stabilește după proiect și cerințele tale.","benefits":["Fundație și structură","Coordonarea etapelor","Finisaje"]},"en":{"short":"Homes","name":"Turnkey homes","tagline":"Closer to the home you want.","description":"Construction and coordination from foundations and structure to finishes. The precise package is defined around the project and your requirements.","benefits":["Foundations and structure","Stage coordination","Finishes"]},"ru":{"short":"Дома","name":"Дома под ключ","tagline":"Ближе к дому, о котором вы мечтаете.","description":"Строительство и координация этапов от фундамента и конструкции до отделки. Точный пакет работ определяем по проекту и вашим требованиям.","benefits":["Фундамент и конструкция","Координация этапов","Отделка"]}},
-    {"id":"demolari","image":"projects/demolare-depozit.webp","position":"center","ro":{"short":"Demolări","name":"Demolări","tagline":"Facem loc următorului proiect.","description":"Desfaceri și demolări controlate, evacuare și pregătirea zonei pentru etapa următoare. Stabilim metoda după condițiile obiectivului și documentația necesară.","benefits":["Desfaceri controlate","Evacuare","Pregătirea zonei"]},"en":{"short":"Demolition","name":"Demolition","tagline":"Make room for your next project.","description":"Controlled removal, demolition, clearance and preparation for the next stage. The method is defined around site conditions and required documentation.","benefits":["Controlled removal","Clearance","Site preparation"]},"ru":{"short":"Демонтаж","name":"Демонтаж","tagline":"Освобождаем место для следующего проекта.","description":"Контролируемый демонтаж, вывоз и подготовка территории к следующему этапу. Метод определяем с учётом условий объекта и необходимой документации.","benefits":["Контролируемый демонтаж","Вывоз","Подготовка территории"]}}
+    {
+      "id": "beton-platforme",
+      "image": "projects/bac-nivelare.webp",
+      "position": "center 58%",
+      "ro": {
+        "short": "Beton",
+        "name": "Beton și platforme",
+        "tagline": "Curți, parcări și pardoseli. O bază pentru fiecare zi.",
+        "description": "Turnări de beton pentru suprafețe rezidențiale, comerciale și industriale. Stabilim soluția după utilizarea spațiului și condițiile din teren.",
+        "benefits": [
+          "Curți și platforme",
+          "Parcări și acces",
+          "Pardoseli din beton"
+        ]
+      },
+      "en": {
+        "short": "Concrete",
+        "name": "Concrete and platforms",
+        "tagline": "Yards, parking areas and floors. A foundation for everyday life.",
+        "description": "Concrete works for residential, commercial and industrial surfaces. We define the scope around the use of the space and the site conditions.",
+        "benefits": [
+          "Yards and platforms",
+          "Parking and access",
+          "Concrete floors"
+        ]
+      },
+      "ru": {
+        "short": "Бетон",
+        "name": "Бетон и площадки",
+        "tagline": "Дворы, парковки и полы. Основа на каждый день.",
+        "description": "Бетонные работы для жилых, коммерческих и промышленных объектов. Объём работ определяем с учётом назначения пространства и условий на участке.",
+        "benefits": [
+          "Дворы и площадки",
+          "Парковки и подъезды",
+          "Бетонные полы"
+        ]
+      },
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "id": "fundatii-structuri",
+      "image": "selected/structura-acoperis.webp",
+      "position": "center 45%",
+      "ro": {
+        "short": "Fundații",
+        "name": "Fundații și structuri",
+        "tagline": "De la teren la structura pe care te bazezi.",
+        "description": "Pregătire, armare, cofrare și turnare pentru construcții noi sau extinderi, în baza documentației tehnice a proiectului.",
+        "benefits": [
+          "Pregătirea terenului",
+          "Cofraj și armare",
+          "Turnarea betonului"
+        ]
+      },
+      "en": {
+        "short": "Foundations",
+        "name": "Foundations and structures",
+        "tagline": "From the ground to the structure you rely on.",
+        "description": "Preparation, reinforcement, formwork and concrete pouring for new buildings or extensions, following the project’s technical documentation.",
+        "benefits": [
+          "Site preparation",
+          "Formwork and reinforcement",
+          "Concrete pouring"
+        ]
+      },
+      "ru": {
+        "short": "Фундаменты",
+        "name": "Фундаменты и конструкции",
+        "tagline": "От участка до надёжной основы здания.",
+        "description": "Подготовка, армирование, опалубка и заливка для новых зданий и пристроек в соответствии с технической документацией проекта.",
+        "benefits": [
+          "Подготовка участка",
+          "Опалубка и армирование",
+          "Заливка бетона"
+        ]
+      },
+      "width": 1920,
+      "height": 1440
+    },
+    {
+      "id": "renovari",
+      "image": "selected/renovare-interior.webp",
+      "position": "center 43%",
+      "ro": {
+        "short": "Renovări",
+        "name": "Renovări și amenajări",
+        "tagline": "Un nou început pentru spațiul tău.",
+        "description": "Reparații capitale și amenajări pentru locuințe, oficii și spații comerciale. Organizăm lucrările după starea existentă și rezultatul dorit.",
+        "benefits": [
+          "Locuințe",
+          "Oficii",
+          "Spații comerciale"
+        ]
+      },
+      "en": {
+        "short": "Renovations",
+        "name": "Renovation and fit-out",
+        "tagline": "A fresh start for your space.",
+        "description": "Complete renovations and fit-outs for homes, offices and commercial premises. Work is organised around the existing condition and the desired result.",
+        "benefits": [
+          "Homes",
+          "Offices",
+          "Commercial spaces"
+        ]
+      },
+      "ru": {
+        "short": "Ремонт",
+        "name": "Ремонт и отделка",
+        "tagline": "Новое начало для вашего пространства.",
+        "description": "Капитальный ремонт и отделка жилья, офисов и коммерческих помещений. Организуем работы с учётом существующего состояния и желаемого результата.",
+        "benefits": [
+          "Жильё",
+          "Офисы",
+          "Коммерческие помещения"
+        ]
+      },
+      "width": 1920,
+      "height": 1440
+    },
+    {
+      "id": "drumuri-amenajari",
+      "image": "projects/platforma-rezidentiala.webp",
+      "position": "center 65%",
+      "ro": {
+        "short": "Drumuri",
+        "name": "Drumuri și amenajări",
+        "tagline": "Acces mai bun. Spațiu exterior bine organizat.",
+        "description": "Amenajări exterioare, pavaj, borduri și trotuare pentru proprietăți private și companii. Evaluăm accesul, suprafața și utilizarea înainte de ofertare.",
+        "benefits": [
+          "Pavaj și borduri",
+          "Trotuare",
+          "Căi de acces"
+        ]
+      },
+      "en": {
+        "short": "Roads",
+        "name": "Roads and exterior works",
+        "tagline": "Better access. A well-organised outdoor space.",
+        "description": "Exterior improvements, paving, kerbs and paths for private properties and businesses. We review access, area and intended use before quoting.",
+        "benefits": [
+          "Paving and kerbs",
+          "Paths",
+          "Access roads"
+        ]
+      },
+      "ru": {
+        "short": "Дороги",
+        "name": "Дороги и благоустройство",
+        "tagline": "Удобный доступ. Продуманное внешнее пространство.",
+        "description": "Благоустройство, мощение, бордюры и тротуары для частных объектов и компаний. Перед предложением оцениваем доступ, площадь и назначение.",
+        "benefits": [
+          "Мощение и бордюры",
+          "Тротуары",
+          "Подъездные пути"
+        ]
+      },
+      "width": 1600,
+      "height": 2134
+    },
+    {
+      "id": "case-la-cheie",
+      "image": "projects/planificare-beton.webp",
+      "position": "center 45%",
+      "ro": {
+        "short": "Case",
+        "name": "Case la cheie",
+        "tagline": "Mai aproape de casa pe care ți-o dorești.",
+        "description": "Execuție și coordonarea etapelor de construcție, de la fundație și structură la finisaje. Pachetul exact se stabilește după proiect și cerințele tale.",
+        "benefits": [
+          "Fundație și structură",
+          "Coordonarea etapelor",
+          "Finisaje"
+        ]
+      },
+      "en": {
+        "short": "Homes",
+        "name": "Turnkey homes",
+        "tagline": "Closer to the home you want.",
+        "description": "Construction and coordination from foundations and structure to finishes. The precise package is defined around the project and your requirements.",
+        "benefits": [
+          "Foundations and structure",
+          "Stage coordination",
+          "Finishes"
+        ]
+      },
+      "ru": {
+        "short": "Дома",
+        "name": "Дома под ключ",
+        "tagline": "Ближе к дому, о котором вы мечтаете.",
+        "description": "Строительство и координация этапов от фундамента и конструкции до отделки. Точный пакет работ определяем по проекту и вашим требованиям.",
+        "benefits": [
+          "Фундамент и конструкция",
+          "Координация этапов",
+          "Отделка"
+        ]
+      },
+      "width": 1600,
+      "height": 2134
+    },
+    {
+      "id": "demolari",
+      "image": "projects/port-mall-demolition/05.webp",
+      "position": "center 52%",
+      "ro": {
+        "short": "Demolări",
+        "name": "Demolări",
+        "tagline": "Facem loc următorului proiect.",
+        "description": "Desfaceri și demolări controlate, evacuare și pregătirea zonei pentru etapa următoare. Stabilim metoda după condițiile obiectivului și documentația necesară.",
+        "benefits": [
+          "Desfaceri controlate",
+          "Evacuare",
+          "Pregătirea zonei"
+        ]
+      },
+      "en": {
+        "short": "Demolition",
+        "name": "Demolition",
+        "tagline": "Make room for your next project.",
+        "description": "Controlled removal, demolition, clearance and preparation for the next stage. The method is defined around site conditions and required documentation.",
+        "benefits": [
+          "Controlled removal",
+          "Clearance",
+          "Site preparation"
+        ]
+      },
+      "ru": {
+        "short": "Демонтаж",
+        "name": "Демонтаж",
+        "tagline": "Освобождаем место для следующего проекта.",
+        "description": "Контролируемый демонтаж, вывоз и подготовка территории к следующему этапу. Метод определяем с учётом условий объекта и необходимой документации.",
+        "benefits": [
+          "Контролируемый демонтаж",
+          "Вывоз",
+          "Подготовка территории"
+        ]
+      },
+      "width": 960,
+      "height": 1280
+    }
+  ],
+  "gallery": [
+    {
+      "image": "selected/renovare-interior.webp",
+      "width": 1920,
+      "height": 1440,
+      "services": [
+        "renovari"
+      ],
+      "ro": "Pregătirea unui spațiu pentru finisaje",
+      "en": "Preparing a space for finishing",
+      "ru": "Подготовка помещения к отделке",
+      "position": "center",
+      "smallWidth": 800
+    },
+    {
+      "image": "selected/structura-acoperis.webp",
+      "width": 1920,
+      "height": 1440,
+      "services": [
+        "fundatii-structuri"
+      ],
+      "ro": "Structură metalică și acoperiș din panouri",
+      "en": "Steel frame and panel roofing",
+      "ru": "Металлический каркас и кровельные панели",
+      "position": "center",
+      "smallWidth": 800
+    },
+    {
+      "image": "projects/bac-nivelare.webp",
+      "width": 1600,
+      "height": 1200,
+      "services": [
+        "beton-platforme",
+        "drumuri-amenajari"
+      ],
+      "ro": "Turnarea și nivelarea betonului",
+      "en": "Concrete pouring and levelling",
+      "ru": "Заливка и выравнивание бетона",
+      "position": "center",
+      "smallWidth": 800
+    },
+    {
+      "image": "selected/panouri-exterior.webp",
+      "width": 1440,
+      "height": 1920,
+      "services": [
+        "fundatii-structuri"
+      ],
+      "ro": "Montaj de panouri pe structură metalică",
+      "en": "Panel installation on a steel structure",
+      "ru": "Монтаж панелей на металлическом каркасе",
+      "position": "center",
+      "smallWidth": 600
+    },
+    {
+      "image": "projects/feredeuca-armare.webp",
+      "width": 1600,
+      "height": 2134,
+      "services": [
+        "beton-platforme",
+        "fundatii-structuri"
+      ],
+      "ro": "Armare înainte de turnare",
+      "en": "Reinforcement before concrete pouring",
+      "ru": "Армирование перед бетонированием",
+      "position": "center",
+      "smallWidth": 800
+    },
+    {
+      "image": "selected/structura-interior.webp",
+      "width": 1440,
+      "height": 1920,
+      "services": [
+        "fundatii-structuri"
+      ],
+      "ro": "Detalii de structură, în timpul execuției",
+      "en": "Structural details during construction",
+      "ru": "Детали конструкции в процессе работ",
+      "position": "center",
+      "smallWidth": 600
+    },
+    {
+      "image": "projects/port-mall-demolition/05.webp",
+      "width": 960,
+      "height": 1280,
+      "services": [
+        "demolari"
+      ],
+      "ro": "Demontarea elementelor existente",
+      "en": "Removal of existing elements",
+      "ru": "Демонтаж существующих элементов",
+      "position": "center",
+      "smallWidth": 800
+    },
+    {
+      "image": "projects/planificare-beton.webp",
+      "width": 1600,
+      "height": 2134,
+      "services": [
+        "case-la-cheie",
+        "fundatii-structuri"
+      ],
+      "ro": "Planșeu din beton în etapa de structură",
+      "en": "Concrete slab during structural works",
+      "ru": "Бетонное перекрытие на этапе строительства",
+      "position": "center",
+      "smallWidth": 800
+    }
   ]
 }

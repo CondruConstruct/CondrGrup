@@ -23,7 +23,7 @@ The current service-first experience is generated from `content/experience.json`
 3. Run `node tools/validate-site.mjs` before publishing.
 4. Preview using `python tools/preview.py` (loopback port 4173, caching disabled).
 
-Legacy company/review/privacy/case-study pages retain their editorial HTML. The older locale/redesign generators are historical migration tools and must not run after the current experience build: they can replace its content. Set `useServicePhotos` in `content/experience.json` only after the owner selects photos. Featured project images remain logo placeholders.
+Legacy company/review/privacy/case-study pages retain their editorial HTML. The older locale/redesign generators are historical migration tools and must not run after the current experience build: they can replace its content. The owner authorized real photography on September 28. `useServicePhotos` is enabled; selected phone photographs and the existing company archive illustrate service categories and a shared work gallery. Featured project images remain logo placeholders until exact photo-to-address associations are confirmed.
 
 The three featured projects are Grenoble 259/9 (office renovation), Feredeului 4 (500 m² yard and 121 m² hangar), and Bomond at Port Mall. Older case-study URLs remain accessible for compatibility but are not part of the featured portfolio. The maps mark addresses/buildings, not surveyed entrances; coordinate evidence is retained in the data file.
 
@@ -45,7 +45,7 @@ The apex domain uses GitHub Pages `A` records. For the recommended `www` redirec
 ## Operational notes
 
 - The experimental 30-second construction widget is preserved behind `FEATURES.buildStory = false` in `assets/js/site.js`.
-- The September redesign displays the existing Condr Grup logo instead of photographs. Original image assets are retained for future owner selection; no replacement project photos have been published.
+- The opening uses an original finite SVG construction animation with pause and reduced-motion support. Service pages and work galleries use real company photographs; selected phone sources are documented in `assets/images/selected/SOURCES.md`. Private originals and contact sheets are outside the repository.
 - The current visual direction is independently implemented, inspired by Tesla service navigation and a Vastavit-style layered opening. The September 22 red/charcoal version is preserved in the private archived repository `CondruConstruct/CondrGrup-archive-2026-09-28`. No reference source code, imagery, videos or copy is reused.
 - Social profile positions are intentionally placeholders until official Facebook, Instagram, and TikTok URLs are supplied.
 - Canonical URLs in `tools/build-seo.mjs` must be updated if the production domain changes.

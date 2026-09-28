@@ -38,7 +38,7 @@ h1,h2,h3,h4,.display { font-family: var(--ex-font); font-weight: 550; letter-spa
 .ex-header.is-scrolled,.ex-header:has(.ex-mega-panel:not([hidden])),.ex-header.menu-open { color: #171a20; background: #fffffff5; backdrop-filter: blur(15px); box-shadow: 0 1px 0 #0000000d; }
 .ex-logo { display: block; width: 160px; flex: 0 0 160px; }
 .ex-logo img { display: block; width: 100%; height: auto; }
-.ex-header.on-dark:not(.is-scrolled):not(.menu-open) .ex-logo img { filter: brightness(0) invert(1); }
+.ex-header.on-dark:not(.is-scrolled):not(.menu-open):not(.menu-active) .ex-logo img { filter: brightness(0) invert(1); }
 .ex-header.on-dark:has(.ex-mega-panel:not([hidden])) .ex-logo img { filter: none; }
 .ex-nav { display: flex; align-items: center; gap: 4px; }
 .ex-nav > a,.ex-nav > button { min-height: 36px; padding: 8px 13px; border: 0; border-radius: 4px; background: transparent; color: inherit; font-size: 14px; font-weight: 550; cursor: pointer; white-space: nowrap; }
@@ -535,3 +535,53 @@ html.motion-ready .ex-reveal.is-visible { opacity: 1; transform: none; }
   .ex-logo { width: 125px; flex-basis: 125px; }
   .ex-slide-copy h1,.ex-slide-copy h2,.ex-service-hero .ex-slide-copy h1 { font-size: 30px; }
 }
+
+/* Real-work photo release: legible copy while keeping the site visible. */
+.ex-hero.has-photos .ex-media::after,
+.ex-service-hero.has-photos .ex-media::after {
+  background: linear-gradient(180deg,rgba(12,18,26,.76) 0%,rgba(12,18,26,.67) 32%,rgba(12,18,26,.27) 61%,rgba(12,18,26,.12) 76%,rgba(12,18,26,.5) 100%);
+}
+.ex-hero.has-photos .ex-slide-copy,
+.ex-service-hero.has-photos .ex-slide-copy { color: #fff; text-shadow: 0 2px 18px #0006; }
+.ex-hero.has-photos .ex-slide-copy p,
+.ex-service-hero.has-photos .ex-slide-copy p { color: #fff; }
+.has-photos .ex-button { text-shadow: none; }
+.has-photos .ex-button.secondary { color: #171a20; background: #fff; }
+.has-photos .ex-button.secondary:hover { background: #eceff3; }
+.ex-hero.has-photos .ex-hero-brandline { color: #fff; text-shadow: 0 1px 8px #0009; }
+.ex-header.on-dark:not(.is-scrolled):not(.menu-active) { text-shadow: 0 1px 8px #0005; }
+.ex-header.on-dark:not(.is-scrolled):not(.menu-active) .ex-nav > button:hover,
+.ex-header.on-dark:not(.is-scrolled):not(.menu-active) .ex-utilities > a:hover,
+.ex-header.on-dark:not(.is-scrolled):not(.menu-active) .ex-utilities > button:hover,
+.ex-header.on-dark:not(.is-scrolled):not(.menu-active) .ex-language summary:hover { background: #ffffff26; }
+.ex-header .ex-language > div { text-shadow: none; }
+.ex-header.menu-active .ex-logo img { filter: none; }
+.ex-wide-feature.has-photos .ex-media::after {
+  background: linear-gradient(180deg,rgba(12,18,26,.06) 0%,rgba(12,18,26,.2) 34%,rgba(12,18,26,.68) 67%,rgba(12,18,26,.84) 100%);
+}
+.ex-wide-feature.has-photos .ex-feature-copy p { color: #fff; }
+.ex-card-media .ex-media::after { background: none; }
+.ex-card-media .ex-media img { transition: transform .65s cubic-bezier(.2,.7,.2,1); }
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .ex-card-media:hover .ex-media img { transform: scale(1.035); }
+}
+/* Photographs are presented as company work, without inventing project identities. */
+.ex-work-gallery { overflow: hidden; }
+.ex-gallery-track { display: flex; gap: 24px; overflow-x: auto; padding: 0 0 20px; scroll-snap-type: x proximity; scrollbar-width: thin; scrollbar-color: #bfc3c9 transparent; }
+.ex-gallery-track figure { flex: 0 0 calc((100% - 36px)/2.5); min-width: 0; margin: 0; scroll-snap-align: start; }
+.ex-gallery-track figure > a { display: block; border-radius: 12px; }
+.ex-gallery-track img { display: block; width: 100%; height: auto; aspect-ratio: 4/3; object-fit: cover; border-radius: 12px; background: #f4f4f4; }
+.ex-gallery-track figcaption { padding: 14px 2px 2px; color: #5c5e62; font-size: 14px; line-height: 1.55; }
+.ex-gallery-track figure > a:focus-visible { outline-offset: -4px; }
+@media (max-width: 700px) {
+  .ex-hero.has-photos .ex-media::after,
+  .ex-service-hero.has-photos .ex-media::after { background: linear-gradient(180deg,rgba(12,18,26,.79) 0%,rgba(12,18,26,.67) 39%,rgba(12,18,26,.2) 68%,rgba(12,18,26,.52) 100%); }
+  .ex-wide-feature.has-photos .ex-media::after { background: linear-gradient(180deg,rgba(12,18,26,.1),rgba(12,18,26,.3) 30%,rgba(12,18,26,.78) 65%,rgba(12,18,26,.86)); }
+  .ex-gallery-track { gap: 16px; }
+  .ex-gallery-track figure { flex-basis: calc((100% - 12px)/1.15); }
+}
+
+/* The first slide is a light vector scene; later slides use photography. */
+.ex-hero.has-photos.is-construction-active .ex-slide.is-active .ex-slide-copy,
+.ex-hero.has-photos.is-construction-active .ex-slide.is-active .ex-slide-copy p { color: #171a20; text-shadow: none; }
+.ex-hero.has-photos.is-construction-active .ex-hero-brandline { color: #5c5e62; text-shadow: none; }

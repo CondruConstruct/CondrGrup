@@ -1,0 +1,77 @@
+/* Original axonometric building study: one finite six-second assembly. */
+.construction-scene { position: absolute; inset: 0; overflow: hidden; background: #eef1f4; isolation: isolate; }
+.cs-ambient { position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 43%,#ffffff 0,#f5f7f9 43%,#e8edf2 100%); }
+.cs-drawing { position: absolute; left: 50%; bottom: 55px; width: min(1130px,100%); height: min(56%,515px); transform: translateX(-50%); overflow: visible; }
+.cs-drawing * { vector-effect: non-scaling-stroke; stroke-linejoin: round; stroke-linecap: round; }
+.cs-ground-line { stroke: #d6dde4; stroke-width: .65; opacity: .63; }
+.cs-ground { opacity: .7; }
+.cs-shadow { fill: #53677e; opacity: .13; }
+.cs-slab .cs-top { fill: #fafbfc; stroke: #bdc8d3; stroke-width: 1.2; }
+.cs-slab .cs-front { fill: #d5dce4; stroke: #b7c2ce; stroke-width: .9; }
+.cs-slab .cs-side { fill: #becbd9; stroke: #b7c2ce; stroke-width: .9; }
+.cs-floor-line { stroke: #cbd6e1; stroke-width: .75; }
+.cs-column .cs-top,.cs-beam .cs-top { fill: #f3f6f9; stroke: #8a9bb0; stroke-width: .8; }
+.cs-column .cs-front,.cs-beam .cs-front { fill: #8a9db3; stroke: #70859c; stroke-width: .8; }
+.cs-column .cs-side,.cs-beam .cs-side { fill: #c3cdd8; stroke: #8a9bb0; stroke-width: .8; }
+.cs-baseplate { fill: #a7b7c8; stroke: #8a9bb0; stroke-width: .8; }
+.cs-wall-back { fill: #e1e7ee; stroke: #b5c2d0; stroke-width: 1; }
+.cs-wall-return { fill: #f2f5f8; stroke: #b5c2d0; stroke-width: 1; }
+.cs-panel-seam { stroke: #c4cfda; stroke-width: .8; }
+.cs-glass { fill: url(#cs-glass-gradient); fill-opacity: .88; stroke: #91a9c8; stroke-width: .8; }
+.cs-window-line { stroke: #829bb9; stroke-width: 1.1; }
+.cs-reflection { stroke: #fff; stroke-width: 2; opacity: .66; }
+.cs-door-handle { stroke: #526e90; stroke-width: 1.8; }
+.cs-brace { stroke: #8195ae; stroke-width: 1.15; }
+.cs-roof .cs-top { fill: #fbfcfd; stroke: #aab9cb; stroke-width: 1; }
+.cs-roof .cs-front { fill: #c9d5e3; stroke: #aab9cb; stroke-width: 1; }
+.cs-roof .cs-side { fill: #b6c5d8; stroke: #aab9cb; stroke-width: 1; }
+.cs-roof-seam { stroke: #d1dbe6; stroke-width: .75; }
+.cs-purlin .cs-top { fill: #e1e8f1; stroke: #899bb0; stroke-width: .7; }
+.cs-purlin .cs-front,.cs-purlin .cs-side { fill: #a7b7ca; stroke: #899bb0; stroke-width: .7; }
+.cs-approach { fill: #e4eaf0; stroke: #ccd7e3; stroke-width: .7; }
+.cs-accent-edge { stroke: #3e6ae1; stroke-width: 2.2; }
+.cs-stage-key { position: absolute; left: 50%; bottom: 115px; display: flex; gap: 7px; transform: translateX(-50%); opacity: .5; }
+.cs-stage-key span { display: block; width: 20px; height: 2px; background: #9aaec9; border-radius: 1px; }
+.ex-hero.has-photos .ex-slide.has-construction-scene .ex-slide-copy { color: #171a20; text-shadow: none; }
+.ex-hero.is-construction-active .ex-hero-brandline { color: #5c5e62; text-shadow: none; }
+.ex-hero .ex-slide.has-construction-scene .ex-button.secondary { background: #fff; color: #393c41; }
+.ex-hero .ex-slide.has-construction-scene .ex-button.secondary:hover { background: #e4e8ed; }
+@keyframes cs-ground-enter { from { opacity: 0; } to { opacity: .7; } }
+@keyframes cs-build-up { from { opacity: 0; transform: translateY(26px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes cs-build-down { from { opacity: 0; transform: translateY(-26px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes cs-panel-enter { from { opacity: 0; transform: translateX(-15px); } to { opacity: 1; transform: translateX(0); } }
+@keyframes cs-trace { from { stroke-dashoffset: 600; opacity: 0; } to { stroke-dashoffset: 0; opacity: 1; } }
+@keyframes cs-stage-complete { from { background: #c7d2e1; } to { background: #3e6ae1; } }
+@media (prefers-reduced-motion: no-preference) {
+  .cs-ground { animation: cs-ground-enter 1.3s ease both; }
+  .cs-foundation { animation: cs-build-up 1s .15s cubic-bezier(.2,.75,.2,1) both; }
+  .cs-member { animation: cs-build-up .85s var(--member-delay,1s) cubic-bezier(.2,.75,.2,1) both; }
+  .cs-beams { animation: cs-build-down 1s 2s cubic-bezier(.2,.75,.2,1) both; }
+  .cs-envelope-back { animation: cs-panel-enter 1s 2.65s cubic-bezier(.2,.75,.2,1) both; }
+  .cs-glazing { animation: cs-panel-enter 1s 3.3s cubic-bezier(.2,.75,.2,1) both; }
+  .cs-roof-group { animation: cs-build-down 1.05s 4s cubic-bezier(.2,.75,.2,1) both; }
+  .cs-accent-edge { stroke-dasharray: 600; animation: cs-trace 1.3s 4.7s ease both; }
+  .cs-stage-key span { animation: cs-stage-complete .6s 1s both; }
+  .cs-stage-key span:nth-child(2) { animation-delay: 2.3s; }
+  .cs-stage-key span:nth-child(3) { animation-delay: 3.6s; }
+  .cs-stage-key span:nth-child(4) { animation-delay: 5s; }
+}
+@media (max-width: 960px) { .cs-drawing { height: 54%; bottom: 64px; width: 107%; } }
+@media (max-width: 700px) {
+  .cs-drawing { bottom: 105px; width: 118%; height: 52%; }
+  .cs-stage-key { bottom: 126px; }
+  .cs-ground { opacity: .45; }
+}
+@media (max-width: 480px) {
+  .cs-drawing { bottom: 135px; width: 125%; height: 45%; }
+  .cs-stage-key { bottom: 140px; }
+}
+@media (max-height: 700px) and (min-width: 701px) { .cs-drawing { bottom: 48px; height: 53%; } .cs-stage-key { bottom: 100px; } }
+@media (prefers-reduced-motion: reduce) {
+  .construction-scene * { animation: none!important; transition: none!important; }
+  .cs-stage,.cs-member { opacity: 1; transform: none; }
+  .cs-accent-edge { stroke-dasharray: none; stroke-dashoffset: 0; }
+  .cs-stage-key span { background: #3e6ae1; }
+}
+
+.ex-hero.is-motion-paused .construction-scene * { animation-play-state: paused; }
