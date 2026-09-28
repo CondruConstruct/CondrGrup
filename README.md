@@ -49,3 +49,7 @@ The apex domain uses GitHub Pages `A` records. For the recommended `www` redirec
 - The current visual direction is independently implemented, inspired by Tesla service navigation and a Vastavit-style layered opening. The September 22 red/charcoal version is preserved in the private archived repository `CondruConstruct/CondrGrup-archive-2026-09-28`. No reference source code, imagery, videos or copy is reused.
 - Social profile positions are intentionally placeholders until official Facebook, Instagram, and TikTok URLs are supplied.
 - Canonical URLs in `tools/build-seo.mjs` must be updated if the production domain changes.
+
+## Form verification
+
+Use a separate browser session for simulated form responses. Always remove routes in a finally block and close the test session; never leave a user-facing browser with mocked requests. Provider acceptance and mailbox arrival are distinct checks. On September28, a labelled live delivery test was confirmed in the configured Gmail inbox. The popup shows its dedicated thank-you screen only after an affirmative provider response, preserves fields on failure and limits requests to30seconds.

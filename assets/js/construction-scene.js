@@ -26,7 +26,7 @@
   for (const x of [0,3.3,6.6,10]) {
     for (const y of [0,6]) {
       const order = x/3.3 + (y === 6 ? 1 : 0);
-      columns += `<g class="cs-member" style="--member-delay:${(1.05 + order*.12).toFixed(2)}s">${prism(x-.09,y-.09,0,.18,.18,3.55,'cs-column')}${polygon([[x-.25,y-.25,.03],[x+.25,y-.25,.03],[x+.25,y+.25,.03],[x-.25,y+.25,.03]],'cs-baseplate')}</g>`;
+      columns += `<g class="cs-member" style="--member-delay:${(.735 + order*.084).toFixed(2)}s">${prism(x-.09,y-.09,0,.18,.18,3.55,'cs-column')}${polygon([[x-.25,y-.25,.03],[x+.25,y-.25,.03],[x+.25,y+.25,.03],[x-.25,y+.25,.03]],'cs-baseplate')}</g>`;
     }
   }
   for (const x of [0,3.3,6.6,10]) beams += prism(x-.1,-.14,3.48,.2,6.28,.25,'cs-beam');

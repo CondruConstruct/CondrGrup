@@ -421,6 +421,7 @@
       });
       form.addEventListener('submit', async event => {
         event.preventDefault();
+        if (form.getAttribute('aria-busy') === 'true') return;
         const status = form.querySelector('.form-status');
         const submit = form.querySelector('[type="submit"]');
         const data = Object.fromEntries(new FormData(form).entries());
@@ -439,10 +440,13 @@
         status.textContent = t.sending;
         status.className = 'form-status';
         submit.disabled = true;
+        form.setAttribute('aria-busy', 'true');
         try {
           trackConversion('form_submit', { form: form.dataset.conversionForm || 'contact' });
           const response = await fetch('https://formsubmit.co/ajax/condru01@gmail.com', {
             method: 'POST',
+            signal: AbortSignal.timeout(30000),
+            referrerPolicy: 'strict-origin-when-cross-origin',
             headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
             body: JSON.stringify(data)
           });
@@ -452,13 +456,17 @@
           status.textContent = t.sent;
           status.classList.add('success');
           form.reset();
-          showToast(t.toast);
+          form.dispatchEvent(new CustomEvent('condr:form-accepted', { bubbles: true }));
+          if (!form.closest('#quote-dialog')) showToast(t.toast);
           trackConversion('form_success', { form: form.dataset.conversionForm || 'contact' });
         } catch (error) {
           status.innerHTML = `${t.sendError} <a href="mailto:condru01@gmail.com">condru01@gmail.com</a>.`;
           status.classList.add('error');
+          status.setAttribute('tabindex', '-1');
+          status.focus();
           trackConversion('form_error', { form: form.dataset.conversionForm || 'contact' });
         } finally {
+          form.removeAttribute('aria-busy');
           submit.disabled = false;
         }
       });

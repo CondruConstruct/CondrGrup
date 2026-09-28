@@ -21,3 +21,7 @@ The first hero slide uses an original six-second SVG assembly (construction-scen
 ## Navigation clarification
 
 Header service names and mobile service rows navigate directly. Only the explicit Menu button opens the navigation dialog. Current service is marked, language popup closes before dialogs open, background scrolling is locked while a dialog is open, and the menu close row stays visible. Desktop links collapse below1200px to preserve space across locales. Inactive hero text is hidden immediately during photo crossfades. Sticky service-bar height controls anchor-scroll clearance.
+
+## Form confirmation and slideshow timing
+
+All opening-slide Discover links go to the localized Projects page. Slides rotate every5seconds; pointer hover/manual navigation do not permanently stop them. Explicit pause, keyboard focus and reduced motion remain available. Vector assembly completes in4.2seconds. Accepted popup submissions replace the form with a localized thank-you and contact-next message; failures preserve inputs and never display success.

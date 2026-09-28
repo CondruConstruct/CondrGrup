@@ -8,6 +8,20 @@
  const header=document.querySelector('.ex-header');
  const menu=document.getElementById('ex-menu');
  const quote=document.getElementById('quote-dialog');
+ const quoteForm=quote.querySelector('form');
+ const quoteSuccess=quote.querySelector('.ex-quote-success');
+ const quoteTitle=quote.querySelector('#quote-title');
+ const quoteIntro=quote.querySelector('.ex-quote-intro');
+ // Only the submission controller may announce accepted requests. Opening or
+ // submitting the dialog never implies success, and page forms stay separate.
+ quoteForm.addEventListener('condr:form-accepted',event=>{
+   if(event.target!==quoteForm||!quoteSuccess.hidden)return;
+   quoteForm.querySelector('.form-status').textContent='';
+   quoteForm.hidden=true;quoteIntro.hidden=true;quoteTitle.hidden=true;
+   quoteSuccess.hidden=false;quote.classList.add('is-success');
+   quote.setAttribute('aria-labelledby','quote-success-title');
+   if(quote.open)quoteSuccess.querySelector('h2').focus({preventScroll:true});
+ });
  const menuToggle=document.querySelector('.ex-menu-toggle');
  const language=document.querySelector('.ex-language');
  let quoteTrigger=null;
@@ -19,8 +33,12 @@
    const closer=event.target.closest('[data-close-dialog]');if(closer)closer.closest('dialog').close();
    const trigger=event.target.closest('[data-quote-service]');if(!trigger)return;
    quoteTrigger=trigger;closeLanguage();if(menu.open)menu.close();
-   const select=quote.querySelector('[name="Lucrare"]');select.value=trigger.dataset.quoteService||'';
-   quote.querySelector('.form-status').textContent='';
+   const wasSuccessful=!quoteSuccess.hidden;
+   if(wasSuccessful){quoteForm.reset();quoteForm.querySelector('.form-status').textContent='';}
+   quoteSuccess.hidden=true;quoteForm.hidden=false;quoteTitle.hidden=false;quoteIntro.hidden=false;
+   quote.classList.remove('is-success');quote.setAttribute('aria-labelledby','quote-title');
+   const select=quote.querySelector('[name="Lucrare"]');
+   if(trigger.dataset.quoteService)select.value=trigger.dataset.quoteService;
    quote.showModal();syncDialogState();(select.value?quote.querySelector('[name="Nume"]'):select).focus();
    window.CondrGrup?.trackConversion('quote_open',{service:select.value||'unspecified'});
  });
@@ -51,20 +69,23 @@
  const hero=document.querySelector('.ex-hero');
  if(hero){
    const slides=[...hero.querySelectorAll('.ex-slide')],dots=[...hero.querySelectorAll('[data-hero-dot]')],pause=hero.querySelector('[data-hero-pause]');
-   let current=0,timer,paused=reduce.matches,onscreen=true,focused=false,hovered=false;
+   let current=0,timer,paused=reduce.matches,onscreen=true,focused=false;
    const stop=()=>{clearTimeout(timer);timer=null;};
-   const schedule=()=>{stop();if(!paused&&!focused&&!hovered&&onscreen&&!document.hidden&&!reduce.matches)timer=setTimeout(()=>go(current+1,false),current===0?10000:7000);};
-   const go=(index,manual=true)=>{
+   const schedule=()=>{stop();if(!paused&&!focused&&onscreen&&!document.hidden&&!reduce.matches)timer=setTimeout(()=>go(current+1),5000);};
+   const go=index=>{
      current=(index+slides.length)%slides.length;
      slides.forEach((slide,i)=>{slide.classList.toggle('is-active',i===current);slide.inert=i!==current;slide.setAttribute('aria-hidden',String(i!==current));});
      dots.forEach((dot,i)=>dot.setAttribute('aria-pressed',String(i===current)));
-     if(manual){paused=true;updatePause();}schedule();
+     schedule();
    };
    const updatePause=()=>{hero.classList.toggle('is-motion-paused',paused);pause.textContent=paused?'▷':'Ⅱ';pause.setAttribute('aria-label',paused?pause.dataset.playLabel:pause.dataset.pauseLabel);};
    hero.querySelector('[data-hero-prev]').addEventListener('click',()=>go(current-1));hero.querySelector('[data-hero-next]').addEventListener('click',()=>go(current+1));dots.forEach((dot,i)=>dot.addEventListener('click',()=>go(i)));
    pause.addEventListener('click',()=>{paused=!paused;updatePause();schedule();});
-   hero.addEventListener('focusin',()=>{focused=true;stop();});hero.addEventListener('focusout',()=>{setTimeout(()=>{focused=hero.contains(document.activeElement);schedule();},0);});
-   hero.addEventListener('pointerenter',()=>{hovered=true;stop();});hero.addEventListener('pointerleave',()=>{hovered=false;schedule();});
+   const syncHeroFocus=()=>{focused=hero.contains(document.activeElement)&&document.activeElement.matches(':focus-visible');schedule();};
+   hero.addEventListener('focusin',syncHeroFocus);
+   hero.addEventListener('focusout',()=>setTimeout(syncHeroFocus,0));
+   hero.addEventListener('pointerdown',()=>setTimeout(syncHeroFocus,0));
+   hero.addEventListener('keydown',()=>setTimeout(syncHeroFocus,0));
    hero.addEventListener('keydown',event=>{if(event.target.closest('button,a'))return;if(event.key==='ArrowRight')go(current+1);if(event.key==='ArrowLeft')go(current-1);});
    new IntersectionObserver(entries=>{onscreen=entries[0].isIntersecting;schedule();},{threshold:.2}).observe(hero);
    document.addEventListener('visibilitychange',schedule);reduce.addEventListener('change',()=>{paused=reduce.matches;updatePause();schedule();});updatePause();schedule();

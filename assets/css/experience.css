@@ -612,3 +612,15 @@ html.ex-dialog-open { overflow: hidden; scrollbar-gutter: stable; }
  .ex-service-bar nav { min-width: 0; justify-content: flex-end; }
  .ex-service-bar nav > button { width: 100%; max-width: 190px; white-space: normal; line-height: 1.35; }
 }
+
+/* Accepted-request confirmation stays inside the quote dialog. */
+.ex-dialog.is-success > .ex-dialog-head { justify-content: flex-end; margin-bottom: 0; }
+.ex-dialog.is-success > .ex-dialog-head .ex-close { margin-left: auto; }
+.ex-quote-success { padding: 8px 8px 12px; text-align: center; }
+.ex-success-mark { display: grid; place-items: center; width: 68px; height: 68px; margin: 0 auto 26px; border-radius: 50%; background: #edf2ff; color: #3e6ae1; }
+.ex-success-mark svg { width: 44px; height: 44px; fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+.ex-quote-success h2 { margin: 0 0 16px; font-family: var(--ex-font); font-weight: 500; font-size: clamp(25px,4vw,30px); line-height: 1.25; letter-spacing: -.025em; }
+.ex-quote-success h2:focus { outline: none; }
+.ex-quote-success p { max-width: 380px; margin: 0 auto 30px; color: #5c5e62; font-size: 16px; line-height: 1.7; }
+.ex-quote-success .ex-button { width: 100%; }
+@media (max-width:480px) { .ex-quote-success { padding-inline: 0; } }

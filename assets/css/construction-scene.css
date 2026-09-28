@@ -1,4 +1,4 @@
-/* Original axonometric building study: one finite six-second assembly. */
+/* Original axonometric building study: one finite 4.2-second assembly. */
 .construction-scene { position: absolute; inset: 0; overflow: hidden; background: #eef1f4; isolation: isolate; }
 .cs-ambient { position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 43%,#ffffff 0,#f5f7f9 43%,#e8edf2 100%); }
 .cs-drawing { position: absolute; left: 50%; bottom: 55px; width: min(1130px,100%); height: min(56%,515px); transform: translateX(-50%); overflow: visible; }
@@ -43,18 +43,18 @@
 @keyframes cs-trace { from { stroke-dashoffset: 600; opacity: 0; } to { stroke-dashoffset: 0; opacity: 1; } }
 @keyframes cs-stage-complete { from { background: #c7d2e1; } to { background: #3e6ae1; } }
 @media (prefers-reduced-motion: no-preference) {
-  .cs-ground { animation: cs-ground-enter 1.3s ease both; }
-  .cs-foundation { animation: cs-build-up 1s .15s cubic-bezier(.2,.75,.2,1) both; }
-  .cs-member { animation: cs-build-up .85s var(--member-delay,1s) cubic-bezier(.2,.75,.2,1) both; }
-  .cs-beams { animation: cs-build-down 1s 2s cubic-bezier(.2,.75,.2,1) both; }
-  .cs-envelope-back { animation: cs-panel-enter 1s 2.65s cubic-bezier(.2,.75,.2,1) both; }
-  .cs-glazing { animation: cs-panel-enter 1s 3.3s cubic-bezier(.2,.75,.2,1) both; }
-  .cs-roof-group { animation: cs-build-down 1.05s 4s cubic-bezier(.2,.75,.2,1) both; }
-  .cs-accent-edge { stroke-dasharray: 600; animation: cs-trace 1.3s 4.7s ease both; }
-  .cs-stage-key span { animation: cs-stage-complete .6s 1s both; }
-  .cs-stage-key span:nth-child(2) { animation-delay: 2.3s; }
-  .cs-stage-key span:nth-child(3) { animation-delay: 3.6s; }
-  .cs-stage-key span:nth-child(4) { animation-delay: 5s; }
+  .cs-ground { animation: cs-ground-enter 0.91s ease both; }
+  .cs-foundation { animation: cs-build-up 0.7s 0.105s cubic-bezier(.2,.75,.2,1) both; }
+  .cs-member { animation: cs-build-up 0.595s var(--member-delay,0.7s) cubic-bezier(.2,.75,.2,1) both; }
+  .cs-beams { animation: cs-build-down 0.7s 1.4s cubic-bezier(.2,.75,.2,1) both; }
+  .cs-envelope-back { animation: cs-panel-enter 0.7s 1.855s cubic-bezier(.2,.75,.2,1) both; }
+  .cs-glazing { animation: cs-panel-enter 0.7s 2.31s cubic-bezier(.2,.75,.2,1) both; }
+  .cs-roof-group { animation: cs-build-down 0.735s 2.8s cubic-bezier(.2,.75,.2,1) both; }
+  .cs-accent-edge { stroke-dasharray: 600; animation: cs-trace 0.91s 3.29s ease both; }
+  .cs-stage-key span { animation: cs-stage-complete 0.42s 0.7s both; }
+  .cs-stage-key span:nth-child(2) { animation-delay: 1.61s; }
+  .cs-stage-key span:nth-child(3) { animation-delay: 2.52s; }
+  .cs-stage-key span:nth-child(4) { animation-delay: 3.5s; }
 }
 @media (max-width: 960px) { .cs-drawing { height: 54%; bottom: 64px; width: 107%; } }
 @media (max-width: 700px) {
