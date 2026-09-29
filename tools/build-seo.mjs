@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 
 const root = path.resolve(import.meta.dirname, '..');
+const { contactPhones } = JSON.parse(await fs.readFile(path.join(root, 'content/experience.json'), 'utf8'));
 const publicBase = 'https://condrgrup.md/';
 const languages = ['ro', 'ru', 'en'];
 async function discoverPages(directory = root, prefix = '') {
@@ -57,13 +58,13 @@ function schemaGraph(language, file, title, description) {
     url: publicBase,
     logo: { '@type': 'ImageObject', url: `${publicBase}assets/icons/logo.svg` },
     image: `${publicBase}assets/images/social-preview.webp`,
-    telephone: '+37369069195',
+    telephone: contactPhones.map(phone => phone.href),
     email: 'condru01@gmail.com',
     taxID: '1026023118602',
     address: { '@type': 'PostalAddress', streetAddress: 'Alexandru cel Bun 17A', addressLocality: 'Vatra', addressCountry: 'MD' },
     areaServed: { '@type': 'Country', name: 'Republic of Moldova' },
     knowsLanguage: ['ro', 'ru', 'en'],
-    contactPoint: { '@type': 'ContactPoint', telephone: '+37369069195', email: 'condru01@gmail.com', contactType: 'sales', availableLanguage: ['Romanian', 'Russian', 'English'], areaServed: 'MD' },
+    contactPoint: { '@type': 'ContactPoint', telephone: contactPhones.map(phone => phone.href), email: 'condru01@gmail.com', contactType: 'sales', availableLanguage: ['Romanian', 'Russian', 'English'], areaServed: 'MD' },
     makesOffer: Object.values(serviceNames[language]).map(name => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name, areaServed: 'Republic of Moldova' } }))
   };
   const webPage = {
@@ -137,7 +138,7 @@ async function writeDiscoveryFiles() {
   await fs.writeFile(path.join(root, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${urls.join('\n')}\n</urlset>\n`, 'utf8');
   const bots = ['*', 'GPTBot', 'ChatGPT-User', 'ClaudeBot', 'PerplexityBot', 'Google-Extended', 'Applebot-Extended', 'Bytespider', 'CCBot', 'anthropic-ai', 'FacebookBot', 'Amazonbot'];
   await fs.writeFile(path.join(root, 'robots.txt'), `${bots.map(bot => `User-agent: ${bot}\nAllow: /`).join('\n\n')}\n\nSitemap: ${publicBase}sitemap.xml\n`, 'utf8');
-  await fs.writeFile(path.join(root, 'llms.txt'), `# Condr Grup\n\n> Condr Grup S.R.L. is a construction contractor based in Vatra, Republic of Moldova, serving private and B2B clients.\n\n## Core services\n- Concrete pouring and platforms: ${publicBase}servicii/beton-platforme.html\n- Roads and exterior works: ${publicBase}servicii/drumuri-amenajari.html\n- Foundations and structures: ${publicBase}servicii/fundatii-structuri.html\n- Turnkey houses: ${publicBase}servicii/case-la-cheie.html\n- Renovations: ${publicBase}servicii/renovari.html\n- Demolition: ${publicBase}servicii/demolari.html\n\n## B2B and project evidence\n- B2B profile: ${publicBase}b2b/\n- Project portfolio: ${publicBase}proiecte/\n- Port Mall demolition, 2023-2026: ${publicBase}proiecte/port-mall-demolari.html\n- Bomond restaurant at Port Mall: ${publicBase}proiecte/bomond-port-mall.html\n- Kaufland Botanica construction work, 2020: ${publicBase}proiecte/kaufland-botanica.html\n- Terra Avia office capital renovation, 2026: ${publicBase}proiecte/terra-avia.html\n- Imonna Grup, 400 m2 concrete platform: ${publicBase}proiecte/imonna-grup.html\n- Radisson Blu Leogrand project participation, 2016: ${publicBase}proiecte/radisson-blu-leogrand.html\n\n## Languages\nRomanian is the canonical language. Russian pages use /ru/ and English pages use /en/.\n\n## Contact\nPhone: +373 69 069 195\nEmail: condru01@gmail.com\nLegal entity: Condr Grup S.R.L., IDNO 1026023118602\nAddress: Alexandru cel Bun 17A, Vatra, Republic of Moldova\n`, 'utf8');
+  await fs.writeFile(path.join(root, 'llms.txt'), `# Condr Grup\n\n> Condr Grup S.R.L. is a construction contractor based in Vatra, Republic of Moldova, serving private and B2B clients.\n\n## Core services\n- Concrete pouring and platforms: ${publicBase}servicii/beton-platforme.html\n- Roads and exterior works: ${publicBase}servicii/drumuri-amenajari.html\n- Foundations and structures: ${publicBase}servicii/fundatii-structuri.html\n- Turnkey houses: ${publicBase}servicii/case-la-cheie.html\n- Renovations: ${publicBase}servicii/renovari.html\n- Demolition: ${publicBase}servicii/demolari.html\n\n## B2B and project evidence\n- B2B profile: ${publicBase}b2b/\n- Project portfolio: ${publicBase}proiecte/\n- Port Mall demolition, 2023-2026: ${publicBase}proiecte/port-mall-demolari.html\n- Bomond restaurant at Port Mall: ${publicBase}proiecte/bomond-port-mall.html\n- Kaufland Botanica construction work, 2020: ${publicBase}proiecte/kaufland-botanica.html\n- Terra Avia office capital renovation, 2026: ${publicBase}proiecte/terra-avia.html\n- Imonna Grup, 400 m2 concrete platform: ${publicBase}proiecte/imonna-grup.html\n- Radisson Blu Leogrand project participation, 2016: ${publicBase}proiecte/radisson-blu-leogrand.html\n\n## Languages\nRomanian is the canonical language. Russian pages use /ru/ and English pages use /en/.\n\n## Contact\nPhone: ${contactPhones.map(phone => phone.display).join(', ')}\nEmail: condru01@gmail.com\nLegal entity: Condr Grup S.R.L., IDNO 1026023118602\nAddress: Alexandru cel Bun 17A, Vatra, Republic of Moldova\n`, 'utf8');
 }
 
 await addSeo();

@@ -1,6 +1,6 @@
 {
   "useServicePhotos": true,
-  "version": "20260928-4",
+  "version": "20260929-1",
   "services": [
     {
       "id": "beton-platforme",
@@ -350,6 +350,16 @@
       "ru": "Бетонное перекрытие на этапе строительства",
       "position": "center",
       "smallWidth": 800
+    }
+  ],
+  "contactPhones": [
+    {
+      "href": "+37369069195",
+      "display": "+373 69 069 195"
+    },
+    {
+      "href": "+37368431905",
+      "display": "+373 68 431 905"
     }
   ]
 }
