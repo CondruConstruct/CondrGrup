@@ -75,3 +75,8 @@
 }
 
 .ex-hero.is-motion-paused .construction-scene * { animation-play-state: paused; }
+
+.ex-hero .cs-drawing { bottom: 45px; height: calc(100% - 270px); width: min(900px,100%); }
+.ex-hero .cs-stage-key { display: none; }
+@media (max-width:700px) { .ex-hero .cs-drawing { bottom: 46px; width: 110%; height: calc(100% - 295px); } }
+@media (max-height:600px) and (min-width:701px) { .ex-hero .cs-drawing { left: 78%; bottom: 40px; width: 47%; height: calc(100% - 85px); } }
