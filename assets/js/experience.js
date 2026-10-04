@@ -65,6 +65,16 @@
    const move=sign=>track.scrollBy({left:sign*(track.firstElementChild.getBoundingClientRect().width+24),behavior:reduce.matches?'instant':'smooth'});
    prev.addEventListener('click',()=>move(-1));next.addEventListener('click',()=>move(1));track.addEventListener('scroll',update,{passive:true});new ResizeObserver(update).observe(track);update();
  });
+ // Native touch scrolling plus explicit, keyboard-accessible service controls.
+ const quick=document.querySelector('.ex-quick-services');
+ if(quick){
+   const track=quick.querySelector('.ex-quick-grid'),prev=quick.querySelector('[data-quick-prev]'),next=quick.querySelector('[data-quick-next]');
+   const update=()=>{prev.disabled=track.scrollLeft<2;next.disabled=track.scrollLeft+track.clientWidth>=track.scrollWidth-3;};
+   const move=sign=>track.scrollBy({left:sign*(track.firstElementChild.getBoundingClientRect().width+parseFloat(getComputedStyle(track).gap)),behavior:reduce.matches?'instant':'smooth'});
+   prev.addEventListener('click',()=>move(-1));next.addEventListener('click',()=>move(1));
+   track.addEventListener('keydown',event=>{if(event.key==='ArrowRight'||event.key==='ArrowLeft'){event.preventDefault();event.stopPropagation();move(event.key==='ArrowRight'?1:-1);}});
+   track.addEventListener('scroll',update,{passive:true});new ResizeObserver(update).observe(track);update();
+ }
  // Vastavit-inspired layered entrances, with an immediately available primary action.
  const hero=document.querySelector('.ex-hero');
  if(hero){

@@ -54,4 +54,4 @@ The apex domain uses GitHub Pages `A` records. For the recommended `www` redirec
 
 Use a separate browser session for simulated form responses. Always remove routes in a finally block and close the test session; never leave a user-facing browser with mocked requests. Provider acceptance and mailbox arrival are distinct checks. On September28, a labelled live delivery test was confirmed in the configured Gmail inbox. The popup shows its dedicated thank-you screen only after an affirmative provider response, preserves fields on failure and limits requests to30seconds.
 
-The homepage first viewport is split into a 70svh introduction and a 30svh chooser linking directly to all six services. Mobile uses six compact text cards so every category is immediately visible.
+The homepage is a full-screen introduction with a transparent service carousel occupying the lower third. Four photo cards fit desktop; phones show two complete cards and a preview of the third. Swipe, keyboard and arrow controls expose all six services. Orange is the brand accent; business projects lead the copy and company name is optional in enquiry details.

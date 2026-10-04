@@ -1,11 +1,11 @@
 {
   "useServicePhotos": true,
-  "version": "20260929-2",
+  "version": "20261004-1",
   "services": [
     {
       "id": "beton-platforme",
-      "image": "projects/bac-nivelare.webp",
-      "position": "center 58%",
+      "image": "projects/imona-feredeului/03.webp",
+      "position": "center 63%",
       "ro": {
         "short": "Beton",
         "name": "Beton și platforme",
@@ -40,7 +40,7 @@
         ]
       },
       "width": 1600,
-      "height": 1200
+      "height": 2844
     },
     {
       "id": "fundatii-structuri",
@@ -84,8 +84,8 @@
     },
     {
       "id": "renovari",
-      "image": "selected/renovare-interior.webp",
-      "position": "center 43%",
+      "image": "selected/renovare-comerciala.webp",
+      "position": "center 48%",
       "ro": {
         "short": "Renovări",
         "name": "Renovări și amenajări",
@@ -119,8 +119,8 @@
           "Коммерческие помещения"
         ]
       },
-      "width": 1920,
-      "height": 1440
+      "width": 1600,
+      "height": 1200
     },
     {
       "id": "drumuri-amenajari",
@@ -204,8 +204,8 @@
     },
     {
       "id": "demolari",
-      "image": "projects/port-mall-demolition/05.webp",
-      "position": "center 52%",
+      "image": "projects/port-mall-demolition/03.webp",
+      "position": "center 50%",
       "ro": {
         "short": "Demolări",
         "name": "Demolări",
@@ -245,6 +245,17 @@
   ],
   "gallery": [
     {
+      "image": "selected/renovare-comerciala.webp",
+      "width": 1600,
+      "height": 1200,
+      "services": [
+        "renovari"
+      ],
+      "ro": "Renovare de spațiu comercial: tavane și instalații în lucru",
+      "en": "Commercial renovation: ceiling and services in progress",
+      "ru": "Ремонт коммерческого помещения: потолок и коммуникации в работе"
+    },
+    {
       "image": "selected/renovare-interior.webp",
       "width": 1920,
       "height": 1440,
@@ -256,6 +267,18 @@
       "ru": "Подготовка помещения к отделке",
       "position": "center",
       "smallWidth": 800
+    },
+    {
+      "image": "selected/panouri-acoperis.webp",
+      "width": 1600,
+      "height": 1200,
+      "position": "center 70%",
+      "services": [
+        "fundatii-structuri"
+      ],
+      "ro": "Detaliu de acoperiș cu panouri pe structură metalică",
+      "en": "Roof panels on a steel structure",
+      "ru": "Кровельные панели на металлическом каркасе"
     },
     {
       "image": "selected/structura-acoperis.webp",

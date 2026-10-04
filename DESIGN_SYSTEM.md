@@ -2,8 +2,8 @@
 
 ## Current direction — 28 September 2026
 
-- Colors: ink #171a20, body #393c41, muted #5c5e62, surfaces #f4f4f4 and #fff, primary action #3e6ae1.
-- System sans typography; 44px desktop hero and 40px wide feature headings. No proprietary reference fonts/assets.
+- Colors: ink #171a20, body #393c41, muted #5c5e62, surfaces #f4f4f4 and #fff, primary action #c4510b.
+- System sans typography; 60px maximum desktop hero and 40px wide feature headings. No proprietary reference fonts/assets.
 - Service-first navigation: six existing categories, direct desktop category links, direct mobile service links, paired enquiry/detail actions.
 - The first block uses three layered image/text slides, five-second dwell, visible controls and pause. Ordinary page scrolling, keyboard operation and reduced-motion support are required.
 - Shared shell: assets/js/experience-shell.js. Behavior: experience.js. Theme: experience.css, following legacy base styles.
@@ -26,6 +26,10 @@ Header service names and mobile service rows navigate directly. Only the explici
 
 All opening-slide Discover links go to the localized Projects page. Slides rotate every5seconds; pointer hover/manual navigation do not permanently stop them. Explicit pause, keyboard focus and reduced motion remain available. Vector assembly completes in4.2seconds. Accepted popup submissions replace the form with a localized thank-you and contact-next message; failures preserve inputs and never display success.
 
-## First viewport — 29 September 2026
+## Full-screen business opening — 4 October 2026
 
-The opening occupies 70svh; a compact six-service chooser fills the remaining 30svh. Desktop cards show photos and direct service links. Narrow screens use a three-column, two-row text grid to keep every choice visible and clickable without scrolling. Short landscape layouts place the building beside the introduction.
+Replaces the September 29 split. The hero occupies100svh (minimum560px in portrait,360px in landscape for legibility). The service carousel is inside its lower33svh with no section background. Four cards fit desktop; narrow screens show2.3 cards and native horizontal swiping. Explicit arrows and keyboard scrolling retain access to all six services. Photo cards use800px derivatives eagerly; other galleries remain lazy.
+
+The composition pairs business-focused copy on the left with the original animated building on the right; phones stack them. Orange #c4510b is used for buttons, focus, heading text on light backgrounds and building edges; #ff9a50 keeps the service heading legible over darker photos. Base colors remain #171a20, #393c41, #f4f4f4 and #fff. System sans typography stays consistent with the existing site.
+
+B2B takes priority in the hero, wide feature, audience order and metadata; residential categories remain available. Company name is optional within expanded enquiry details. Three service photos replaced; two owner-photo pairs added with provenance. Do not assign unidentified work photos to named project cards.
