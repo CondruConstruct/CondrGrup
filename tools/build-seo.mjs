@@ -2,7 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 
 const root = path.resolve(import.meta.dirname, '..');
-const { contactPhones } = JSON.parse(await fs.readFile(path.join(root, 'content/experience.json'), 'utf8'));
+const { contactPhones, services } = JSON.parse(await fs.readFile(path.join(root, 'content/experience.json'), 'utf8'));
 const publicBase = 'https://condrgrup.md/';
 const languages = ['ro', 'ru', 'en'];
 async function discoverPages(directory = root, prefix = '') {
@@ -35,6 +35,41 @@ const publicRoute = file => file === 'index.html' ? '' : file.replace(/index\.ht
 const pageUrl = (language, file) => `${publicBase}${language === 'ro' ? '' : `${language}/`}${publicRoute(file)}`;
 const localFile = (language, file) => path.join(root, language === 'ro' ? '' : language, file);
 const cleanText = value => value.replace(/<[^>]+>/g, '').replaceAll('&amp;', '&').replaceAll('&quot;', '"').trim();
+const escapeText = value => value.replaceAll('&', '&amp;').replaceAll('"', '&quot;').replaceAll('<', '&lt;').replaceAll('>', '&gt;');
+
+function pageMetadata(language, file, html) {
+  const service = services.find(item => file === `servicii/${item.id}.html`);
+  if (service) {
+    const location = { ro: 'în Moldova', en: 'in Moldova', ru: 'в Молдове' }[language];
+    return { title: `${service[language].name} ${location} — Condr Grup`, description: service[language].description };
+  }
+  if (file === 'servicii/index.html') {
+    return {
+      ro: { title: 'Servicii de construcții în Moldova — Condr Grup', description: 'Explorează serviciile Condr Grup în Moldova: beton și platforme, fundații și structuri, renovări, drumuri, case la cheie și demolări. Solicită o ofertă.' },
+      en: { title: 'Construction services in Moldova — Condr Grup', description: 'Explore Condr Grup construction services in Moldova: concrete, foundations, renovations, exterior works, turnkey homes and demolition. Request a quote.' },
+      ru: { title: 'Строительные услуги в Молдове — Condr Grup', description: 'Строительные услуги Condr Grup в Молдове: бетон, фундаменты, ремонт, дороги, дома под ключ и демонтаж. Выберите услугу и запросите предложение.' }
+    }[language];
+  }
+  return {
+    title: cleanText(html.match(/<title>([\s\S]*?)<\/title>/)?.[1] || 'Condr Grup'),
+    description: cleanText(html.match(/<meta name="description" content="([^"]*)"/)?.[1] || 'Condr Grup — servicii de construcții în Republica Moldova.')
+  };
+}
+
+function pageImages(language, file, html) {
+  const images = new Set();
+  for (const tag of html.matchAll(/<img\b[^>]*>/g)) {
+    const source = tag[0].match(/\bsrc="([^"]+)"/)?.[1];
+    if (!source) continue;
+    const image = new URL(source.replaceAll('&amp;', '&'), pageUrl(language, file));
+    if (image.origin !== new URL(publicBase).origin || !image.pathname.startsWith('/assets/images/')) continue;
+    if (!/\.(?:avif|gif|jpe?g|png|webp)$/i.test(image.pathname)) continue;
+    image.search = '';
+    image.hash = '';
+    images.add(image.href);
+  }
+  return [...images].sort();
+}
 
 function breadcrumbs(language, file, title) {
   if (file === 'index.html') return null;
@@ -86,8 +121,7 @@ function schemaGraph(language, file, title, description) {
 }
 
 function seoBlock(language, file, html) {
-  const title = cleanText(html.match(/<title>([\s\S]*?)<\/title>/)?.[1] || 'Condr Grup');
-  const description = cleanText(html.match(/<meta name="description" content="([^"]*)"/)?.[1] || 'Condr Grup — servicii de construcții în Republica Moldova.');
+  const { title, description } = pageMetadata(language, file, html);
   const canonical = pageUrl(language, file);
   const alternates = languages.map(code => `  <link rel="alternate" hreflang="${code}" href="${pageUrl(code, file)}">`).join('\n');
   const ogLocale = { ro: 'ro_MD', en: 'en_US', ru: 'ru_MD' }[language];
@@ -122,20 +156,27 @@ async function addSeo() {
   for (const language of languages) for (const file of pages) {
     const filename = localFile(language, file);
     let html = await fs.readFile(filename, 'utf8');
+    const original = html;
+    const { title, description } = pageMetadata(language, file, html);
+    html = html.replace(/<title>[\s\S]*?<\/title>/, `<title>${escapeText(title)}</title>`);
+    html = html.replace(/<meta name="description" content="[^"]*"/, `<meta name="description" content="${escapeText(description)}"`);
     const block = seoBlock(language, file, html);
     html = /<!-- SEO:START -->[\s\S]*?<!-- SEO:END -->/.test(html) ? html.replace(/<!-- SEO:START -->[\s\S]*?<!-- SEO:END -->/, block) : html.replace('</head>', `${block}\n</head>`);
-    await fs.writeFile(filename, html, 'utf8');
+    if (html !== original) await fs.writeFile(filename, html, 'utf8');
   }
 }
 
 async function writeDiscoveryFiles() {
   const urls = [];
   for (const language of languages) for (const file of pages) {
-    const stats = await fs.stat(localFile(language, file));
+    const html = await fs.readFile(localFile(language, file), 'utf8');
+    const images = pageImages(language, file, html).map(url => `    <image:image><image:loc>${escapeText(url)}</image:loc></image:image>`).join('\n');
     const alternates = languages.map(code => `    <xhtml:link rel="alternate" hreflang="${code}" href="${pageUrl(code, file)}"/>`).join('\n');
-    urls.push(`  <url>\n    <loc>${pageUrl(language, file)}</loc>\n    <lastmod>${stats.mtime.toISOString().slice(0, 10)}</lastmod>\n${alternates}\n    <xhtml:link rel="alternate" hreflang="x-default" href="${pageUrl('ro', file)}"/>\n  </url>`);
+    // Checkout and rebuild mtimes do not establish a significant content update.
+    // Omit optional lastmod until verified per-page publication dates are available.
+    urls.push(`  <url>\n    <loc>${pageUrl(language, file)}</loc>\n${alternates}\n    <xhtml:link rel="alternate" hreflang="x-default" href="${pageUrl('ro', file)}"/>${images ? `\n${images}` : ''}\n  </url>`);
   }
-  await fs.writeFile(path.join(root, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${urls.join('\n')}\n</urlset>\n`, 'utf8');
+  await fs.writeFile(path.join(root, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n${urls.join('\n')}\n</urlset>\n`, 'utf8');
   const bots = ['*', 'GPTBot', 'ChatGPT-User', 'ClaudeBot', 'PerplexityBot', 'Google-Extended', 'Applebot-Extended', 'Bytespider', 'CCBot', 'anthropic-ai', 'FacebookBot', 'Amazonbot'];
   await fs.writeFile(path.join(root, 'robots.txt'), `${bots.map(bot => `User-agent: ${bot}\nAllow: /`).join('\n\n')}\n\nSitemap: ${publicBase}sitemap.xml\n`, 'utf8');
   await fs.writeFile(path.join(root, 'llms.txt'), `# Condr Grup\n\n> Condr Grup S.R.L. is a construction contractor based in Vatra, Republic of Moldova, serving private and B2B clients.\n\n## Core services\n- Concrete pouring and platforms: ${publicBase}servicii/beton-platforme.html\n- Roads and exterior works: ${publicBase}servicii/drumuri-amenajari.html\n- Foundations and structures: ${publicBase}servicii/fundatii-structuri.html\n- Turnkey houses: ${publicBase}servicii/case-la-cheie.html\n- Renovations: ${publicBase}servicii/renovari.html\n- Demolition: ${publicBase}servicii/demolari.html\n\n## B2B and project evidence\n- B2B profile: ${publicBase}b2b/\n- Project portfolio: ${publicBase}proiecte/\n- Port Mall demolition, 2023-2026: ${publicBase}proiecte/port-mall-demolari.html\n- Bomond restaurant at Port Mall: ${publicBase}proiecte/bomond-port-mall.html\n- Kaufland Botanica construction work, 2020: ${publicBase}proiecte/kaufland-botanica.html\n- Terra Avia office capital renovation, 2026: ${publicBase}proiecte/terra-avia.html\n- Imonna Grup, 400 m2 concrete platform: ${publicBase}proiecte/imonna-grup.html\n- Radisson Blu Leogrand project participation, 2016: ${publicBase}proiecte/radisson-blu-leogrand.html\n\n## Languages\nRomanian is the canonical language. Russian pages use /ru/ and English pages use /en/.\n\n## Contact\nPhone: ${contactPhones.map(phone => phone.display).join(', ')}\nEmail: condru01@gmail.com\nLegal entity: Condr Grup S.R.L., IDNO 1026023118602\nAddress: Alexandru cel Bun 17A, Vatra, Republic of Moldova\n`, 'utf8');

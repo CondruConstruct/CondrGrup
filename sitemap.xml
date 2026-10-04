@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://condrgrup.md/b2b/</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/b2b/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/b2b/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/b2b/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://condrgrup.md/b2b/"/>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/bac-nivelare.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/feredeuca-armare.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/planificare-beton.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/platforma-rezidentiala.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/port-mall-demolition/05.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/panouri-exterior.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/renovare-interior.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/structura-acoperis.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/structura-interior.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://condrgrup.md/confidentialitate.html</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/confidentialitate.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/confidentialitate.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/confidentialitate.html"/>
@@ -18,7 +25,6 @@
   </url>
   <url>
     <loc>https://condrgrup.md/contact/</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/contact/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/contact/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/contact/"/>
@@ -26,7 +32,6 @@
   </url>
   <url>
     <loc>https://condrgrup.md/despre/</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/despre/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/despre/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/despre/"/>
@@ -34,15 +39,22 @@
   </url>
   <url>
     <loc>https://condrgrup.md/</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://condrgrup.md/"/>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/bac-nivelare.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/feredeuca-armare.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/planificare-beton.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/platforma-rezidentiala.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/port-mall-demolition/05.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/panouri-exterior.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/renovare-interior.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/structura-acoperis.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/structura-interior.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://condrgrup.md/proiecte/bomond-port-mall.html</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/proiecte/bomond-port-mall.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/proiecte/bomond-port-mall.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/proiecte/bomond-port-mall.html"/>
@@ -50,7 +62,6 @@
   </url>
   <url>
     <loc>https://condrgrup.md/proiecte/feredeului-4.html</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/proiecte/feredeului-4.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/proiecte/feredeului-4.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/proiecte/feredeului-4.html"/>
@@ -58,7 +69,6 @@
   </url>
   <url>
     <loc>https://condrgrup.md/proiecte/grenoble-oficiu.html</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/proiecte/grenoble-oficiu.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/proiecte/grenoble-oficiu.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/proiecte/grenoble-oficiu.html"/>
@@ -66,7 +76,6 @@
   </url>
   <url>
     <loc>https://condrgrup.md/proiecte/imonna-grup.html</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/proiecte/imonna-grup.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/proiecte/imonna-grup.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/proiecte/imonna-grup.html"/>
@@ -74,15 +83,21 @@
   </url>
   <url>
     <loc>https://condrgrup.md/proiecte/</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/proiecte/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/proiecte/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/proiecte/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://condrgrup.md/proiecte/"/>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/bac-nivelare.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/feredeuca-armare.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/planificare-beton.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/port-mall-demolition/05.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/panouri-exterior.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/renovare-interior.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/structura-acoperis.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/structura-interior.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://condrgrup.md/proiecte/kaufland-botanica.html</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/proiecte/kaufland-botanica.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/proiecte/kaufland-botanica.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/proiecte/kaufland-botanica.html"/>
@@ -90,7 +105,6 @@
   </url>
   <url>
     <loc>https://condrgrup.md/proiecte/port-mall-demolari.html</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/proiecte/port-mall-demolari.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/proiecte/port-mall-demolari.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/proiecte/port-mall-demolari.html"/>
@@ -98,7 +112,6 @@
   </url>
   <url>
     <loc>https://condrgrup.md/proiecte/radisson-blu-leogrand.html</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/proiecte/radisson-blu-leogrand.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/proiecte/radisson-blu-leogrand.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/proiecte/radisson-blu-leogrand.html"/>
@@ -106,7 +119,6 @@
   </url>
   <url>
     <loc>https://condrgrup.md/proiecte/terra-avia.html</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/proiecte/terra-avia.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/proiecte/terra-avia.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/proiecte/terra-avia.html"/>
@@ -114,7 +126,6 @@
   </url>
   <url>
     <loc>https://condrgrup.md/recenzii/</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/recenzii/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/recenzii/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/recenzii/"/>
@@ -122,71 +133,117 @@
   </url>
   <url>
     <loc>https://condrgrup.md/servicii/beton-platforme.html</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/servicii/beton-platforme.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/servicii/beton-platforme.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/servicii/beton-platforme.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://condrgrup.md/servicii/beton-platforme.html"/>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/bac-nivelare.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/feredeuca-armare.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/planificare-beton.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/platforma-rezidentiala.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/port-mall-demolition/05.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/renovare-interior.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/structura-acoperis.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://condrgrup.md/servicii/case-la-cheie.html</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/servicii/case-la-cheie.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/servicii/case-la-cheie.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/servicii/case-la-cheie.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://condrgrup.md/servicii/case-la-cheie.html"/>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/bac-nivelare.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/planificare-beton.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/platforma-rezidentiala.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/port-mall-demolition/05.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/renovare-interior.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/structura-acoperis.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://condrgrup.md/servicii/demolari.html</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/servicii/demolari.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/servicii/demolari.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/servicii/demolari.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://condrgrup.md/servicii/demolari.html"/>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/bac-nivelare.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/planificare-beton.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/platforma-rezidentiala.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/port-mall-demolition/05.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/renovare-interior.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/structura-acoperis.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://condrgrup.md/servicii/drumuri-amenajari.html</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/servicii/drumuri-amenajari.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/servicii/drumuri-amenajari.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/servicii/drumuri-amenajari.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://condrgrup.md/servicii/drumuri-amenajari.html"/>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/bac-nivelare.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/planificare-beton.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/platforma-rezidentiala.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/port-mall-demolition/05.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/renovare-interior.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/structura-acoperis.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://condrgrup.md/servicii/fundatii-structuri.html</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/servicii/fundatii-structuri.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/servicii/fundatii-structuri.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/servicii/fundatii-structuri.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://condrgrup.md/servicii/fundatii-structuri.html"/>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/bac-nivelare.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/feredeuca-armare.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/planificare-beton.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/platforma-rezidentiala.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/port-mall-demolition/05.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/panouri-exterior.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/renovare-interior.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/structura-acoperis.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/structura-interior.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://condrgrup.md/servicii/</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/servicii/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/servicii/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/servicii/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://condrgrup.md/servicii/"/>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/bac-nivelare.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/planificare-beton.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/platforma-rezidentiala.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/port-mall-demolition/05.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/renovare-interior.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/structura-acoperis.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://condrgrup.md/servicii/renovari.html</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/servicii/renovari.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/servicii/renovari.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/servicii/renovari.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://condrgrup.md/servicii/renovari.html"/>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/bac-nivelare.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/planificare-beton.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/platforma-rezidentiala.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/port-mall-demolition/05.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/renovare-interior.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/structura-acoperis.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://condrgrup.md/ru/b2b/</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/b2b/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/b2b/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/b2b/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://condrgrup.md/b2b/"/>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/bac-nivelare.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/feredeuca-armare.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/planificare-beton.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/platforma-rezidentiala.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/port-mall-demolition/05.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/panouri-exterior.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/renovare-interior.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/structura-acoperis.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/structura-interior.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://condrgrup.md/ru/confidentialitate.html</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/confidentialitate.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/confidentialitate.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/confidentialitate.html"/>
@@ -194,7 +251,6 @@
   </url>
   <url>
     <loc>https://condrgrup.md/ru/contact/</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/contact/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/contact/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/contact/"/>
@@ -202,7 +258,6 @@
   </url>
   <url>
     <loc>https://condrgrup.md/ru/despre/</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/despre/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/despre/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/despre/"/>
@@ -210,15 +265,22 @@
   </url>
   <url>
     <loc>https://condrgrup.md/ru/</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://condrgrup.md/"/>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/bac-nivelare.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/feredeuca-armare.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/planificare-beton.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/platforma-rezidentiala.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/port-mall-demolition/05.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/panouri-exterior.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/renovare-interior.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/structura-acoperis.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/structura-interior.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://condrgrup.md/ru/proiecte/bomond-port-mall.html</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/proiecte/bomond-port-mall.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/proiecte/bomond-port-mall.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/proiecte/bomond-port-mall.html"/>
@@ -226,7 +288,6 @@
   </url>
   <url>
     <loc>https://condrgrup.md/ru/proiecte/feredeului-4.html</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/proiecte/feredeului-4.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/proiecte/feredeului-4.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/proiecte/feredeului-4.html"/>
@@ -234,7 +295,6 @@
   </url>
   <url>
     <loc>https://condrgrup.md/ru/proiecte/grenoble-oficiu.html</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/proiecte/grenoble-oficiu.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/proiecte/grenoble-oficiu.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/proiecte/grenoble-oficiu.html"/>
@@ -242,7 +302,6 @@
   </url>
   <url>
     <loc>https://condrgrup.md/ru/proiecte/imonna-grup.html</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/proiecte/imonna-grup.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/proiecte/imonna-grup.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/proiecte/imonna-grup.html"/>
@@ -250,15 +309,21 @@
   </url>
   <url>
     <loc>https://condrgrup.md/ru/proiecte/</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/proiecte/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/proiecte/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/proiecte/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://condrgrup.md/proiecte/"/>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/bac-nivelare.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/feredeuca-armare.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/planificare-beton.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/port-mall-demolition/05.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/panouri-exterior.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/renovare-interior.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/structura-acoperis.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/structura-interior.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://condrgrup.md/ru/proiecte/kaufland-botanica.html</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/proiecte/kaufland-botanica.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/proiecte/kaufland-botanica.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/proiecte/kaufland-botanica.html"/>
@@ -266,7 +331,6 @@
   </url>
   <url>
     <loc>https://condrgrup.md/ru/proiecte/port-mall-demolari.html</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/proiecte/port-mall-demolari.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/proiecte/port-mall-demolari.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/proiecte/port-mall-demolari.html"/>
@@ -274,7 +338,6 @@
   </url>
   <url>
     <loc>https://condrgrup.md/ru/proiecte/radisson-blu-leogrand.html</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/proiecte/radisson-blu-leogrand.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/proiecte/radisson-blu-leogrand.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/proiecte/radisson-blu-leogrand.html"/>
@@ -282,7 +345,6 @@
   </url>
   <url>
     <loc>https://condrgrup.md/ru/proiecte/terra-avia.html</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/proiecte/terra-avia.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/proiecte/terra-avia.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/proiecte/terra-avia.html"/>
@@ -290,7 +352,6 @@
   </url>
   <url>
     <loc>https://condrgrup.md/ru/recenzii/</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/recenzii/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/recenzii/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/recenzii/"/>
@@ -298,71 +359,117 @@
   </url>
   <url>
     <loc>https://condrgrup.md/ru/servicii/beton-platforme.html</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/servicii/beton-platforme.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/servicii/beton-platforme.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/servicii/beton-platforme.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://condrgrup.md/servicii/beton-platforme.html"/>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/bac-nivelare.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/feredeuca-armare.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/planificare-beton.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/platforma-rezidentiala.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/port-mall-demolition/05.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/renovare-interior.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/structura-acoperis.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://condrgrup.md/ru/servicii/case-la-cheie.html</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/servicii/case-la-cheie.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/servicii/case-la-cheie.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/servicii/case-la-cheie.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://condrgrup.md/servicii/case-la-cheie.html"/>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/bac-nivelare.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/planificare-beton.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/platforma-rezidentiala.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/port-mall-demolition/05.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/renovare-interior.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/structura-acoperis.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://condrgrup.md/ru/servicii/demolari.html</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/servicii/demolari.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/servicii/demolari.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/servicii/demolari.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://condrgrup.md/servicii/demolari.html"/>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/bac-nivelare.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/planificare-beton.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/platforma-rezidentiala.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/port-mall-demolition/05.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/renovare-interior.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/structura-acoperis.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://condrgrup.md/ru/servicii/drumuri-amenajari.html</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/servicii/drumuri-amenajari.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/servicii/drumuri-amenajari.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/servicii/drumuri-amenajari.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://condrgrup.md/servicii/drumuri-amenajari.html"/>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/bac-nivelare.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/planificare-beton.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/platforma-rezidentiala.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/port-mall-demolition/05.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/renovare-interior.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/structura-acoperis.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://condrgrup.md/ru/servicii/fundatii-structuri.html</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/servicii/fundatii-structuri.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/servicii/fundatii-structuri.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/servicii/fundatii-structuri.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://condrgrup.md/servicii/fundatii-structuri.html"/>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/bac-nivelare.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/feredeuca-armare.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/planificare-beton.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/platforma-rezidentiala.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/port-mall-demolition/05.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/panouri-exterior.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/renovare-interior.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/structura-acoperis.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/structura-interior.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://condrgrup.md/ru/servicii/</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/servicii/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/servicii/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/servicii/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://condrgrup.md/servicii/"/>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/bac-nivelare.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/planificare-beton.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/platforma-rezidentiala.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/port-mall-demolition/05.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/renovare-interior.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/structura-acoperis.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://condrgrup.md/ru/servicii/renovari.html</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/servicii/renovari.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/servicii/renovari.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/servicii/renovari.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://condrgrup.md/servicii/renovari.html"/>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/bac-nivelare.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/planificare-beton.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/platforma-rezidentiala.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/port-mall-demolition/05.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/renovare-interior.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/structura-acoperis.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://condrgrup.md/en/b2b/</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/b2b/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/b2b/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/b2b/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://condrgrup.md/b2b/"/>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/bac-nivelare.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/feredeuca-armare.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/planificare-beton.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/platforma-rezidentiala.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/port-mall-demolition/05.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/panouri-exterior.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/renovare-interior.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/structura-acoperis.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/structura-interior.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://condrgrup.md/en/confidentialitate.html</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/confidentialitate.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/confidentialitate.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/confidentialitate.html"/>
@@ -370,7 +477,6 @@
   </url>
   <url>
     <loc>https://condrgrup.md/en/contact/</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/contact/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/contact/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/contact/"/>
@@ -378,7 +484,6 @@
   </url>
   <url>
     <loc>https://condrgrup.md/en/despre/</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/despre/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/despre/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/despre/"/>
@@ -386,15 +491,22 @@
   </url>
   <url>
     <loc>https://condrgrup.md/en/</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://condrgrup.md/"/>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/bac-nivelare.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/feredeuca-armare.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/planificare-beton.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/platforma-rezidentiala.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/port-mall-demolition/05.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/panouri-exterior.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/renovare-interior.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/structura-acoperis.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/structura-interior.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://condrgrup.md/en/proiecte/bomond-port-mall.html</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/proiecte/bomond-port-mall.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/proiecte/bomond-port-mall.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/proiecte/bomond-port-mall.html"/>
@@ -402,7 +514,6 @@
   </url>
   <url>
     <loc>https://condrgrup.md/en/proiecte/feredeului-4.html</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/proiecte/feredeului-4.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/proiecte/feredeului-4.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/proiecte/feredeului-4.html"/>
@@ -410,7 +521,6 @@
   </url>
   <url>
     <loc>https://condrgrup.md/en/proiecte/grenoble-oficiu.html</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/proiecte/grenoble-oficiu.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/proiecte/grenoble-oficiu.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/proiecte/grenoble-oficiu.html"/>
@@ -418,7 +528,6 @@
   </url>
   <url>
     <loc>https://condrgrup.md/en/proiecte/imonna-grup.html</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/proiecte/imonna-grup.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/proiecte/imonna-grup.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/proiecte/imonna-grup.html"/>
@@ -426,15 +535,21 @@
   </url>
   <url>
     <loc>https://condrgrup.md/en/proiecte/</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/proiecte/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/proiecte/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/proiecte/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://condrgrup.md/proiecte/"/>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/bac-nivelare.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/feredeuca-armare.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/planificare-beton.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/port-mall-demolition/05.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/panouri-exterior.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/renovare-interior.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/structura-acoperis.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/structura-interior.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://condrgrup.md/en/proiecte/kaufland-botanica.html</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/proiecte/kaufland-botanica.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/proiecte/kaufland-botanica.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/proiecte/kaufland-botanica.html"/>
@@ -442,7 +557,6 @@
   </url>
   <url>
     <loc>https://condrgrup.md/en/proiecte/port-mall-demolari.html</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/proiecte/port-mall-demolari.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/proiecte/port-mall-demolari.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/proiecte/port-mall-demolari.html"/>
@@ -450,7 +564,6 @@
   </url>
   <url>
     <loc>https://condrgrup.md/en/proiecte/radisson-blu-leogrand.html</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/proiecte/radisson-blu-leogrand.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/proiecte/radisson-blu-leogrand.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/proiecte/radisson-blu-leogrand.html"/>
@@ -458,7 +571,6 @@
   </url>
   <url>
     <loc>https://condrgrup.md/en/proiecte/terra-avia.html</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/proiecte/terra-avia.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/proiecte/terra-avia.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/proiecte/terra-avia.html"/>
@@ -466,7 +578,6 @@
   </url>
   <url>
     <loc>https://condrgrup.md/en/recenzii/</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/recenzii/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/recenzii/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/recenzii/"/>
@@ -474,58 +585,97 @@
   </url>
   <url>
     <loc>https://condrgrup.md/en/servicii/beton-platforme.html</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/servicii/beton-platforme.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/servicii/beton-platforme.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/servicii/beton-platforme.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://condrgrup.md/servicii/beton-platforme.html"/>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/bac-nivelare.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/feredeuca-armare.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/planificare-beton.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/platforma-rezidentiala.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/port-mall-demolition/05.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/renovare-interior.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/structura-acoperis.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://condrgrup.md/en/servicii/case-la-cheie.html</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/servicii/case-la-cheie.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/servicii/case-la-cheie.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/servicii/case-la-cheie.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://condrgrup.md/servicii/case-la-cheie.html"/>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/bac-nivelare.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/planificare-beton.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/platforma-rezidentiala.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/port-mall-demolition/05.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/renovare-interior.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/structura-acoperis.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://condrgrup.md/en/servicii/demolari.html</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/servicii/demolari.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/servicii/demolari.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/servicii/demolari.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://condrgrup.md/servicii/demolari.html"/>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/bac-nivelare.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/planificare-beton.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/platforma-rezidentiala.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/port-mall-demolition/05.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/renovare-interior.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/structura-acoperis.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://condrgrup.md/en/servicii/drumuri-amenajari.html</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/servicii/drumuri-amenajari.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/servicii/drumuri-amenajari.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/servicii/drumuri-amenajari.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://condrgrup.md/servicii/drumuri-amenajari.html"/>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/bac-nivelare.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/planificare-beton.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/platforma-rezidentiala.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/port-mall-demolition/05.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/renovare-interior.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/structura-acoperis.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://condrgrup.md/en/servicii/fundatii-structuri.html</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/servicii/fundatii-structuri.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/servicii/fundatii-structuri.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/servicii/fundatii-structuri.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://condrgrup.md/servicii/fundatii-structuri.html"/>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/bac-nivelare.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/feredeuca-armare.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/planificare-beton.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/platforma-rezidentiala.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/port-mall-demolition/05.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/panouri-exterior.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/renovare-interior.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/structura-acoperis.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/structura-interior.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://condrgrup.md/en/servicii/</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/servicii/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/servicii/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/servicii/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://condrgrup.md/servicii/"/>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/bac-nivelare.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/planificare-beton.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/platforma-rezidentiala.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/port-mall-demolition/05.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/renovare-interior.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/structura-acoperis.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://condrgrup.md/en/servicii/renovari.html</loc>
-    <lastmod>2026-09-29</lastmod>
     <xhtml:link rel="alternate" hreflang="ro" href="https://condrgrup.md/servicii/renovari.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://condrgrup.md/ru/servicii/renovari.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://condrgrup.md/en/servicii/renovari.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://condrgrup.md/servicii/renovari.html"/>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/bac-nivelare.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/planificare-beton.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/platforma-rezidentiala.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/projects/port-mall-demolition/05.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/renovare-interior.webp</image:loc></image:image>
+    <image:image><image:loc>https://condrgrup.md/assets/images/selected/structura-acoperis.webp</image:loc></image:image>
   </url>
 </urlset>
